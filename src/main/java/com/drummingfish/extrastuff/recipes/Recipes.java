@@ -1,12 +1,12 @@
 package com.drummingfish.extrastuff.recipes;
 
-import extrastuff.blocks.Blocks;
-import extrastuff.config.ConfigHandler;
-import extrastuff.items.Items;
+import com.drummingfish.extrastuff.block.BlocksES;
+import com.drummingfish.extrastuff.item.ItemsES;
 import net.minecraft.block.Block;
+import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraftforge.oredict.OreDictionary;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -16,21 +16,9 @@ public class Recipes {
 	//public static boolean hardmodeRecipes;
 
 	public static void registerRecipes() {
-		
-		ItemStack ingotIronStack = new ItemStack(Item.ingotIron);
-		ItemStack chainmailStack = new ItemStack(Items.chainmail);
-		ItemStack buttonStoneStack = new ItemStack(Block.stoneButton);
-		ItemStack ingotGoldStack = new ItemStack(Item.ingotGold);
-		ItemStack diamondStack = new ItemStack(Item.diamond);
-		ItemStack emeraldStack = new ItemStack(Item.emerald);
-		ItemStack leverStack = new ItemStack(Block.lever);
-		ItemStack leatherStack = new ItemStack(Item.leather);
-		ItemStack stringStack = new ItemStack(Item.silk);
-		ItemStack trapdoorStack = new ItemStack(Block.trapdoor);
-		ItemStack cobbleStack = new ItemStack(Block.cobblestone);
-		ItemStack vineStack = new ItemStack(Block.vine);
-		ItemStack stoneBrickStack = new ItemStack(Block.stoneBrick, 1, 0);
-		ItemStack cobbleWallStack = new ItemStack(Block.cobblestoneWall, 1, 0);
+
+		ItemStack stoneBrickStack = new ItemStack(Blocks.stonebrick, 1, 0);
+		ItemStack cobbleWallStack = new ItemStack(Blocks.cobblestone_wall, 1, 0);
 		
 		//if (OreDictionary.getOres("plateSteel").size() != 0) {
 		//	  System.out.println("plateSteel OreDictionary value detected");
@@ -42,20 +30,20 @@ public class Recipes {
 		if (Loader.isModLoaded("gregtech_addon")) {
 			return;
 		} else {
-			GameRegistry.addRecipe(new ShapedOreRecipe(Items.chainmail, true,
+			GameRegistry.addRecipe(new ShapedOreRecipe(ItemsES.chainmail, true,
 					new Object[] { "X X", " X ", "X X", 'X', "nuggetIron"
 								 }));
-			GameRegistry.addRecipe(new ItemStack(Item.helmetChain),
-					new Object[] { "XXX", "X X", 'X', chainmailStack
+			GameRegistry.addRecipe(new ItemStack(Items.chainmail_helmet),
+					new Object[] { "XXX", "X X", 'X', ItemsES.chainmail
 								 });
-			GameRegistry.addRecipe(new ItemStack(Item.plateChain),
-					new Object[] { "X X", "XXX", "XXX", 'X', chainmailStack
+			GameRegistry.addRecipe(new ItemStack(Items.chainmail_chestplate),
+					new Object[] { "X X", "XXX", "XXX", 'X', ItemsES.chainmail
 								 });
-			GameRegistry.addRecipe(new ItemStack(Item.legsChain),
-					new Object[] { "XXX", "X X", "X X", 'X', chainmailStack
+			GameRegistry.addRecipe(new ItemStack(Items.chainmail_leggings),
+					new Object[] { "XXX", "X X", "X X", 'X', ItemsES.chainmail
 								 });
-			GameRegistry.addRecipe(new ItemStack(Item.bootsChain),
-					new Object[] { "X X", "X X", 'X', chainmailStack
+			GameRegistry.addRecipe(new ItemStack(Items.chainmail_boots),
+					new Object[] { "X X", "X X", 'X', ItemsES.chainmail
 								 });
 		}
 		
@@ -63,20 +51,20 @@ public class Recipes {
 		if (Loader.isModLoaded("BiomesOPlenty") || Loader.isModLoaded("Forestry") || Loader.isModLoaded("ThermalExpansion")) {
 			return;
 		} else {
-			GameRegistry.addRecipe(new ItemStack(Block.cobblestoneMossy),
-					new Object[] { "XXX", "XYX", "XXX", 'X', vineStack, 'Y', cobbleStack
+			GameRegistry.addRecipe(new ItemStack(Blocks.mossy_cobblestone),
+					new Object[] { "XXX", "XYX", "XXX", 'X', Blocks.vine, 'Y', Blocks.cobblestone
 								 });
-			GameRegistry.addRecipe(new ItemStack(Block.stoneBrick, 1, 1),
-					new Object[] { "XXX", "XYX", "XXX", 'X', vineStack, 'Y', stoneBrickStack
+			GameRegistry.addRecipe(new ItemStack(Blocks.stonebrick, 1, 1),
+					new Object[] { "XXX", "XYX", "XXX", 'X', Blocks.vine, 'Y', stoneBrickStack
 								 });
 		}
-		GameRegistry.addRecipe(new ItemStack(Block.cobblestoneWall, 1, 1),
-				new Object[] { "XXX", "XYX", "XXX", 'X', vineStack, 'Y', cobbleWallStack
+		GameRegistry.addRecipe(new ItemStack(Blocks.cobblestone_wall, 1, 1),
+				new Object[] { "XXX", "XYX", "XXX", 'X', Blocks.vine, 'Y', cobbleWallStack
 							 });
 		
 		// Iron Trapdoor
-		GameRegistry.addRecipe(new ItemStack(Blocks.trapDoorIron),
-				new Object[] { " X ", "XYX", " X ", 'X', ingotIronStack, 'Y', trapdoorStack
+		GameRegistry.addRecipe(new ItemStack(BlocksES.trapDoorIron),
+				new Object[] { " X ", "XYX", " X ", 'X', Items.iron_ingot, 'Y', Blocks.trapdoor
 							 });
 		
 		// Saddle

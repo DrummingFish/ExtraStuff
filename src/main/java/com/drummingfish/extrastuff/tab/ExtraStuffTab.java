@@ -1,17 +1,18 @@
 package com.drummingfish.extrastuff.tab;
 
-import extrastuff.items.Items;
+import com.drummingfish.extrastuff.ModInfo;
+import com.drummingfish.extrastuff.item.ItemsES;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
 
-public class ExtraStuffTab extends CreativeTabs {
+public class ExtraStuffTab {
 
-	public ExtraStuffTab(int id, String name) {
-		super(name);
-	}
-	
-	@Override
-	public int getTabIconItemIndex() {
-		return Items.chainmail.itemID;
-		
-	}
+    public static final CreativeTabs EXTRASTUFF_TAB = new CreativeTabs(ModInfo.ID.toLowerCase()) {
+
+        @Override
+        public Item getTabIconItem() {
+            return ItemsES.chainmail;
+
+        }
+    };
 }
