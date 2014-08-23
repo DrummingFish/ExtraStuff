@@ -14,7 +14,7 @@ public class ItemsES {
 		chainmail = new ItemChainmail();
 		ironNugget = new ItemIronNugget();
 
-        GameRegistry.registerItem(chainmail, ItemInfo.CHAINMAIL_KEY);
+        GameRegistry.registerItem(chainmail, "chainmail");
         GameRegistry.registerItem(ironNugget, ItemInfo.IRON_NUGGET_KEY);
     }
 	
