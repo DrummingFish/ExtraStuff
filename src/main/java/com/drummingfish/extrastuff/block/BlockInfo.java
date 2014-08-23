@@ -53,4 +53,17 @@ public class BlockInfo {
 	public static final String TRAPDOOR_IRON_UNLOCALIZED_NAME = "ironTrapDoor";
 	public static final String TRAPDOOR_IRON_NAME = "Iron Trapdoor";
 	public static final String TRAPDOOR_IRON_ICON = "ironTrapDoor";
+
+    public static final String DUCT_TAPE_KEY = "DuctTape";
+    public static final String DUCT_TAPE_UNLOCALIZED_NAME = "ductTape";
+    public static final String DUCT_TAPE_NAME = "Duct Tape";
+
+    public static final String WINDOW_KEY = "Window";
+    public static final String WINDOW_UNLOCALIZED_NAME = "window";
+    public static final String WINDOW_NAME = "Window";
+
+    public static final String PERMAICE_ORE_KEY = "OrePermaIce";
+    public static final String PERMAICE_ORE_UNLOCALIZED_NAME = "orePermaIce";
+    public static final String PERMAICE_ORE_NAME = "Perma-Ice Ore";
+    public static final String PERMAICE_ORE_ICON = "orePermaice";
 }
