@@ -1,6 +1,6 @@
 package com.drummingfish.extrastuff.block;
 
-import com.drummingfish.extrastuff.ExtraStuff;
+import com.drummingfish.extrastuff.tab.ExtraStuffTab;
 import net.minecraft.block.BlockButton;
 
 public class BlockButtonIron extends BlockButton {
@@ -8,7 +8,7 @@ public class BlockButtonIron extends BlockButton {
 	protected BlockButtonIron() {
 		super(false);
 		this.setBlockName(BlockInfo.BUTTON_IRON_UNLOCALIZED_NAME);
-		this.setCreativeTab(ExtraStuff.extraStuffTab);
+        this.setCreativeTab(ExtraStuffTab.EXTRASTUFF_TAB);
 		setHardness(2.0F);
 		setResistance(10.0F);
 	}

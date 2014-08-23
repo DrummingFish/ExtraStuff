@@ -1,8 +1,7 @@
 package com.drummingfish.extrastuff.block;
 
 public class BlockInfo {
-	
-	//Block IDs can go 0-4095
+
 	public static final String TEXTURE_LOCATION = "extrastuff";
 
 	public static final String BUTTON_IRON_KEY = "IronButton";
@@ -50,42 +49,8 @@ public class BlockInfo {
 	public static final String LEVER_OBSIDIAN_NAME = "Obsidian Lever";
 	public static final String LEVER_OBSIDIAN_ICON = "obsidianLever";
 
-	public static final String EXTRABED_KEY = "ExtraBed";
-	public static final String EXTRABED_UNLOCALIZED_NAME = "extraBed";
-	public static final String EXTRABED_NAME = "Bed";
-	public static final String EXTRABED_HEADTOP0 = "bed_head_top0";
-	public static final String EXTRABED_FEETTOP0 = "bed_feet_top0";
-	public static final String EXTRABED_HEADEND0 = "bed_head_end0";
-	public static final String EXTRABED_FEETEND0 = "bed_feet_end0";
-	public static final String EXTRABED_HEADSIDE0 = "bed_head_side0";
-	public static final String EXTRABED_FEETSIDE0 = "bed_feet_side0";
-	public static final String EXTRABED_HEADTOP1 = "bed_head_top1";
-	public static final String EXTRABED_FEETTOP1 = "bed_feet_top1";
-	public static final String EXTRABED_HEADEND1 = "bed_head_end1";
-	public static final String EXTRABED_FEETEND1 = "bed_feet_end1";
-	public static final String EXTRABED_HEADSIDE1 = "bed_head_side1";
-	public static final String EXTRABED_FEETSIDE1 = "bed_feet_side1";
-
 	public static final String TRAPDOOR_IRON_KEY = "IronTrapDoor";
 	public static final String TRAPDOOR_IRON_UNLOCALIZED_NAME = "ironTrapDoor";
 	public static final String TRAPDOOR_IRON_NAME = "Iron Trapdoor";
 	public static final String TRAPDOOR_IRON_ICON = "ironTrapDoor";
-
-	public static final String DOOR_GOLD_KEY = "GoldDoor";
-	public static final String DOOR_GOLD_UNLOCALIZED_NAME = "goldDoor";
-	public static final String DOOR_GOLD_NAME = "Gold Door";
-	public static final String DOOR_GOLD_ICON_UPPER = "goldDoorUpper";
-	public static final String DOOR_GOLD_ICON_LOWER = "goldDoorLower";
-
-	public static final String DOOR_DIAMOND_KEY = "DiamondDoor";
-	public static final String DOOR_DIAMOND_UNLOCALIZED_NAME = "diamondDoor";
-	public static final String DOOR_DIAMOND_NAME = "Diamond Door";
-	public static final String DOOR_DIAMOND_ICON_UPPER = "diamondDoorUpper";
-	public static final String DOOR_DIAMOND_ICON_LOWER = "diamondDoorLower";
-
-	public static final String DOOR_EMERALD_KEY = "EmeraldDoor";
-	public static final String DOOR_EMERALD_UNLOCALIZED_NAME = "emeraldDoor";
-	public static final String DOOR_EMERALD_NAME = "Emerald Door";
-	public static final String DOOR_EMERALD_ICON_UPPER = "emeraldDoorUpper";
-	public static final String DOOR_EMERALD_ICON_LOWER = "emeraldDoorLower";
 }

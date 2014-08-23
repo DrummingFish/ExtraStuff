@@ -1,6 +1,5 @@
 package com.drummingfish.extrastuff.block;
 
-import com.drummingfish.extrastuff.ExtraStuff;
 import com.drummingfish.extrastuff.tab.ExtraStuffTab;
 import net.minecraft.block.BlockButton;
 

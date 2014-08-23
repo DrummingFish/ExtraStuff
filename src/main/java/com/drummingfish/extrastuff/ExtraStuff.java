@@ -24,16 +24,16 @@ public class ExtraStuff {
 	@Mod.Instance(ModInfo.ID)
 	public static ExtraStuff instance;
 	
-	@SidedProxy(clientSide = "extrastuff.proxy.ClientProxy", serverSide = "extrastuff.proxy.CommonProxy")
+	@SidedProxy(clientSide = "com.drummingfish.extrastuff.proxy.ClientProxy", serverSide = "com.drummingfish.extrastuff.proxy.CommonProxy")
 	public static CommonProxy proxy;
 	
-	public static ExtraStuffTab extraStuffTab = new ExtraStuffTab();
+	// public static ExtraStuffTab extraStuffTab = new ExtraStuffTab();
 	
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		ConfigHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigHandler());
-        LogHelper.info("Pre Initialization Complete!");
+        LogHelper.info("Pre-Initialization Complete!");
 
 		ItemsES.init();
 		BlocksES.init();
@@ -48,13 +48,13 @@ public class ExtraStuff {
 		
 		Recipes.registerRecipes();
 
-		LanguageRegistry.instance().addStringLocalization("itemGroup.Extra Stuff", "Extra Stuff");
-	}
+		// LanguageRegistry.instance().addStringLocalization("itemGroup.Extra Stuff", "Extra Stuff");
+
+        LogHelper.info("Initialization Complete!");
+    }
 	
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
-		
-	}
-	
-	
+        LogHelper.info("Post-Initialization Complete!");
+    }
 }

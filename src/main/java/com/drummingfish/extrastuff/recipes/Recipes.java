@@ -2,10 +2,8 @@ package com.drummingfish.extrastuff.recipes;
 
 import com.drummingfish.extrastuff.block.BlocksES;
 import com.drummingfish.extrastuff.item.ItemsES;
-import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 import cpw.mods.fml.common.Loader;
