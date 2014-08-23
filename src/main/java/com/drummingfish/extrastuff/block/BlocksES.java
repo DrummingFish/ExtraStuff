@@ -18,13 +18,7 @@ public class BlocksES {
 	public static Block leverIron;
 	public static Block leverObsidian;
 	
-	public static Block extraBed;
-	
 	public static Block trapDoorIron;
-	
-	public static Block doorGold;
-	public static Block doorDiamond;
-	public static Block doorEmerald;
 
 	public static void init() {
 		buttonIron = new BlockButtonIron().setBlockTextureName("iron_block");
@@ -57,19 +51,7 @@ public class BlocksES {
 		leverObsidian = new BlockLeverObsidian();
 		GameRegistry.registerBlock(leverObsidian, BlockInfo.LEVER_OBSIDIAN_KEY);
 		
-		//extraBed = new BlockExtraBed(BlockInfo.EXTRABED_ID);
-		//GameRegistry.registerBlock(extraBed, BlockInfo.EXTRABED_KEY);
-		
 		trapDoorIron = new BlockIronTrapDoor(Material.iron);
 		GameRegistry.registerBlock(trapDoorIron, BlockInfo.TRAPDOOR_IRON_KEY);
-
-		//doorGold = new BlockDoorGold(BlockInfo.DOOR_GOLD_ID, Material.iron);
-		//GameRegistry.registerBlock(doorGold, BlockInfo.DOOR_GOLD_KEY);
-		
-		//doorDiamond = new BlockDoorDiamond(BlockInfo.DOOR_DIAMOND_ID, Material.iron);
-		//GameRegistry.registerBlock(doorDiamond, BlockInfo.DOOR_DIAMOND_KEY);
-		
-		//doorEmerald = new BlockDoorEmerald(BlockInfo.DOOR_EMERALD_ID, Material.iron);
-		//GameRegistry.registerBlock(doorEmerald, BlockInfo.DOOR_EMERALD_KEY);
 	}
 }
