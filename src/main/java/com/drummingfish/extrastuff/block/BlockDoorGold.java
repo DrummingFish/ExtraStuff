@@ -2,6 +2,7 @@ package com.drummingfish.extrastuff.block;
 
 import java.util.Random;
 
+import com.drummingfish.extrastuff.tab.ExtraStuffTab;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import extrastuff.core.ExtraStuff;
@@ -22,8 +23,8 @@ public class BlockDoorGold extends BlockDoor {
 	
 	protected BlockDoorGold(int id, Material par2Material) {
 		super(id, par2Material);
-		setCreativeTab(ExtraStuff.extraStuffTab);
-		setUnlocalizedName(BlockInfo.DOOR_GOLD_UNLOCALIZED_NAME);
+        this.setCreativeTab(ExtraStuffTab.EXTRASTUFF_TAB);
+        setUnlocalizedName(BlockInfo.DOOR_GOLD_UNLOCALIZED_NAME);
 	}
 	
 

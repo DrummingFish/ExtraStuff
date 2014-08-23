@@ -3,8 +3,6 @@ package com.drummingfish.extrastuff.item;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
-import extrastuff.items.ItemInfo;
-import extrastuff.items.ItemChainmail;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
 public class ItemsES {
@@ -23,15 +21,6 @@ public class ItemsES {
 		//goldDoor = new ItemDoorGold(ItemInfo.DOOR_GOLD_ID, Material.iron);
 		//diamondDoor = new ItemDoorDiamond(ItemInfo.DOOR_DIAMOND_ID, Material.iron);
 		//emeraldDoor = new ItemDoorEmerald(ItemInfo.DOOR_EMERALD_ID, Material.iron);
-	}
-	
-	public static void addNames() {
-		LanguageRegistry.addName(chainmail, ItemInfo.CHAINMAIL_NAME);
-		LanguageRegistry.addName(ironNugget, ItemInfo.IRON_NUGGET_NAME);
-		//LanguageRegistry.addName(extraBed, ItemInfo.EXTRABED_NAME);
-		//LanguageRegistry.addName(goldDoor, ItemInfo.DOOR_GOLD_NAME);
-		//LanguageRegistry.addName(diamondDoor, ItemInfo.DOOR_DIAMOND_NAME);
-		//LanguageRegistry.addName(emeraldDoor, ItemInfo.DOOR_EMERALD_NAME);
 	}
 	
 	public static void oreRegistration() {

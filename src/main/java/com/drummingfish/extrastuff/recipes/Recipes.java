@@ -71,56 +71,56 @@ public class Recipes {
 		if (Loader.isModLoaded("DartCraft")) {
 			return;
 		} else {
-			GameRegistry.addRecipe(new ItemStack(Item.saddle),
-					new Object[] { "XXX", "XZ ", " Y ", 'X', leatherStack, 'Y', ingotIronStack, 'Z', stringStack
+			GameRegistry.addRecipe(new ItemStack(Items.saddle),
+					new Object[] { "XXX", "XZ ", " Y ", 'X', Items.leather, 'Y', Items.iron_ingot, 'Z', Items.string
 								 });
 		}
 		
 		// Horse Armour
-		GameRegistry.addRecipe(new ItemStack(Item.horseArmorIron),
-				new Object[] { "  X", "XYX", "X X", 'X', ingotIronStack, 'Y', Block.cloth
+		GameRegistry.addRecipe(new ItemStack(Items.iron_horse_armor),
+				new Object[] { "  X", "XYX", "X X", 'X', Items.iron_ingot, 'Y', Blocks.wool
 							 });
-		GameRegistry.addRecipe(new ItemStack(Item.horseArmorGold),
-				new Object[] { "  X", "XYX", "X X", 'X', ingotGoldStack, 'Y', Block.cloth
+		GameRegistry.addRecipe(new ItemStack(Items.golden_horse_armor),
+				new Object[] { "  X", "XYX", "X X", 'X', Items.gold_ingot, 'Y', Blocks.wool
 							 });
-		GameRegistry.addRecipe(new ItemStack(Item.horseArmorDiamond),
-				new Object[] { "  X", "XYX", "X X", 'X', diamondStack, 'Y', Block.cloth
+		GameRegistry.addRecipe(new ItemStack(Items.diamond_horse_armor),
+				new Object[] { "  X", "XYX", "X X", 'X', Items.diamond, 'Y', Blocks.wool
 							 });
 		
 		// 9 Iron Nugget <-> Iron
-		GameRegistry.addShapelessRecipe(new ItemStack(Items.ironNugget, 9),
-				new Object[] { ingotIronStack
+		GameRegistry.addShapelessRecipe(new ItemStack(ItemsES.ironNugget, 9),
+				new Object[] { Items.iron_ingot
 							 });
-		GameRegistry.addRecipe(new ShapedOreRecipe(ingotIronStack,
+		GameRegistry.addRecipe(new ShapedOreRecipe(Items.iron_ingot,
 				new Object[] { "XXX", "XXX", "XXX", 'X', "nuggetIron"
 							 }));
 		
 		// Buttons
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.buttonIron),
-				new Object[] { ingotIronStack, buttonStoneStack
+		GameRegistry.addShapelessRecipe(new ItemStack(BlocksES.buttonIron),
+				new Object[] { Items.iron_ingot, Blocks.stone_button
 							 });
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.buttonGold),
-				new Object[] { ingotGoldStack, buttonStoneStack
+		GameRegistry.addShapelessRecipe(new ItemStack(BlocksES.buttonGold),
+				new Object[] { Items.gold_ingot, Blocks.stone_button
 							 });
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.buttonDiamond),
-				new Object[] { diamondStack, buttonStoneStack
+		GameRegistry.addShapelessRecipe(new ItemStack(BlocksES.buttonDiamond),
+				new Object[] { Items.diamond, Blocks.stone_button
 							 });
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.buttonEmerald),
-				new Object[] { emeraldStack, buttonStoneStack
+		GameRegistry.addShapelessRecipe(new ItemStack(BlocksES.buttonEmerald),
+				new Object[] { Items.emerald, Blocks.stone_button
 							 });
 		
 		// Levers
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.leverIron),
-				new Object[] { ingotIronStack, leverStack
+		GameRegistry.addShapelessRecipe(new ItemStack(BlocksES.leverIron),
+				new Object[] { Items.iron_ingot, Blocks.lever
 							 });
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.leverGold),
-				new Object[] { ingotGoldStack, leverStack
+		GameRegistry.addShapelessRecipe(new ItemStack(BlocksES.leverGold),
+				new Object[] { Items.gold_ingot, Blocks.lever
 							 });
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.leverDiamond),
-				new Object[] { diamondStack, leverStack
+		GameRegistry.addShapelessRecipe(new ItemStack(BlocksES.leverDiamond),
+				new Object[] { Items.diamond, Blocks.lever
 							 });
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.leverEmerald),
-				new Object[] { emeraldStack, leverStack
+		GameRegistry.addShapelessRecipe(new ItemStack(BlocksES.leverEmerald),
+				new Object[] { Items.emerald, Blocks.lever
 							 });
 	}
 }

@@ -42,25 +42,25 @@ public class BlocksES {
 		buttonObsidian = new BlockButtonObsidian().setBlockTextureName("obsidian");
 		GameRegistry.registerBlock(buttonObsidian, BlockInfo.BUTTON_OBSIDIAN_KEY);
 		
-		leverIron = new BlockLeverIron(BlockInfo.LEVER_IRON_ID);
+		leverIron = new BlockLeverIron();
 		GameRegistry.registerBlock(leverIron, BlockInfo.LEVER_IRON_KEY);
 		
-		leverGold = new BlockLeverGold(BlockInfo.LEVER_GOLD_ID);
+		leverGold = new BlockLeverGold();
 		GameRegistry.registerBlock(leverGold, BlockInfo.LEVER_GOLD_KEY);
 		
-		leverDiamond = new BlockLeverDiamond(BlockInfo.LEVER_DIAMOND_ID);
+		leverDiamond = new BlockLeverDiamond();
 		GameRegistry.registerBlock(leverDiamond, BlockInfo.LEVER_DIAMOND_KEY);
 		
-		leverEmerald = new BlockLeverEmerald(BlockInfo.LEVER_EMERALD_ID);
+		leverEmerald = new BlockLeverEmerald();
 		GameRegistry.registerBlock(leverEmerald, BlockInfo.LEVER_EMERALD_KEY);
 		
-		leverObsidian = new BlockLeverObsidian(BlockInfo.LEVER_OBSIDIAN_ID);
+		leverObsidian = new BlockLeverObsidian();
 		GameRegistry.registerBlock(leverObsidian, BlockInfo.LEVER_OBSIDIAN_KEY);
 		
 		//extraBed = new BlockExtraBed(BlockInfo.EXTRABED_ID);
 		//GameRegistry.registerBlock(extraBed, BlockInfo.EXTRABED_KEY);
 		
-		trapDoorIron = new BlockIronTrapDoor(BlockInfo.TRAPDOOR_IRON_ID, Material.iron);
+		trapDoorIron = new BlockIronTrapDoor(Material.iron);
 		GameRegistry.registerBlock(trapDoorIron, BlockInfo.TRAPDOOR_IRON_KEY);
 
 		//doorGold = new BlockDoorGold(BlockInfo.DOOR_GOLD_ID, Material.iron);
@@ -71,27 +71,5 @@ public class BlocksES {
 		
 		//doorEmerald = new BlockDoorEmerald(BlockInfo.DOOR_EMERALD_ID, Material.iron);
 		//GameRegistry.registerBlock(doorEmerald, BlockInfo.DOOR_EMERALD_KEY);
-	}
-	
-	public static void addNames() {
-        buttonIron.setBlockName(BlockInfo.BUTTON_IRON_NAME);
-		buttonGold.setBlockName(BlockInfo.BUTTON_GOLD_NAME);
-		buttonDiamond.setBlockName(BlockInfo.BUTTON_DIAMOND_NAME);
-		buttonEmerald.setBlockName(BlockInfo.BUTTON_EMERALD_NAME);
-		buttonObsidian.setBlockName(BlockInfo.BUTTON_OBSIDIAN_NAME);
-		
-		leverIron.setBlockName(BlockInfo.LEVER_IRON_NAME);
-		leverGold.setBlockName(BlockInfo.LEVER_GOLD_NAME);
-		leverDiamond.setBlockName(BlockInfo.LEVER_DIAMOND_NAME);
-		leverEmerald.setBlockName(BlockInfo.LEVER_EMERALD_NAME);
-		leverObsidian.setBlockName(BlockInfo.LEVER_OBSIDIAN_NAME);
-		
-		//LanguageRegistry.addName(extraBed, BlockInfo.EXTRABED_NAME);
-		
-		trapDoorIron.setBlockName(BlockInfo.TRAPDOOR_IRON_NAME);
-		
-		//LanguageRegistry.addName(doorGold, BlockInfo.DOOR_GOLD_NAME);
-		//LanguageRegistry.addName(doorDiamond, BlockInfo.DOOR_DIAMOND_NAME);
-		//LanguageRegistry.addName(doorEmerald, BlockInfo.DOOR_EMERALD_NAME);
 	}
 }

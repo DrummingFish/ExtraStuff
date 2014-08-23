@@ -2,33 +2,32 @@ package com.drummingfish.extrastuff.block;
 
 import java.util.Random;
 
+import com.drummingfish.extrastuff.ExtraStuff;
+import com.drummingfish.extrastuff.tab.ExtraStuffTab;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import extrastuff.core.ExtraStuff;
-import extrastuff.items.Items;
 import net.minecraft.block.BlockDoor;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.IconFlipped;
-import net.minecraft.client.renderer.texture.IconRegister;
-import net.minecraft.util.Icon;
+import net.minecraft.util.IIcon;
 import net.minecraft.world.IBlockAccess;
 
 public class BlockDoorDiamond extends BlockDoor {
 
 	@SideOnly(Side.CLIENT)
-    private Icon[] field_111044_a;
+    private IIcon[] field_111044_a;
     @SideOnly(Side.CLIENT)
-    private Icon[] field_111043_b;
+    private IIcon[] field_111043_b;
 	
-	protected BlockDoorDiamond(int id, Material par2Material) {
-		super(id, par2Material);
-		setCreativeTab(ExtraStuff.extraStuffTab);
-		setUnlocalizedName(BlockInfo.DOOR_DIAMOND_UNLOCALIZED_NAME);
+	protected BlockDoorDiamond(Material par2Material) {
+		super(par2Material);
+        this.setCreativeTab(ExtraStuffTab.EXTRASTUFF_TAB);
+        setUnlocalizedName(BlockInfo.DOOR_DIAMOND_UNLOCALIZED_NAME);
 	}
 	
 
 	@SideOnly(Side.CLIENT)
-	public Icon getIcon(int par1, int par2)
+	public IIcon getIcon(int par1, int par2)
     {
         return field_111043_b[0];
     }

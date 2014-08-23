@@ -27,7 +27,7 @@ public class ExtraStuff {
 	@SidedProxy(clientSide = "extrastuff.proxy.ClientProxy", serverSide = "extrastuff.proxy.CommonProxy")
 	public static CommonProxy proxy;
 	
-	public static CreativeTabs extraStuffTab = new ExtraStuffTab(CreativeTabs.getNextID(), ModInfo.NAME);
+	public static ExtraStuffTab extraStuffTab = new ExtraStuffTab();
 	
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
@@ -44,14 +44,11 @@ public class ExtraStuff {
 	
 	@EventHandler
 	public void load(FMLInitializationEvent event) {
-		ItemsES.addNames();
 		ItemsES.oreRegistration();
-		
-		BlocksES.addNames();
 		
 		Recipes.registerRecipes();
 
-		LanguageRegistry.instance().instance().addStringLocalization("itemGroup.Extra Stuff", "Extra Stuff");
+		LanguageRegistry.instance().addStringLocalization("itemGroup.Extra Stuff", "Extra Stuff");
 	}
 	
 	@EventHandler
