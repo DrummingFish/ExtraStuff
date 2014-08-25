@@ -34,4 +34,34 @@ public class ItemInfo {
 	public static final String DOOR_EMERALD_UNLOCALIZED_NAME = "emeraldDoor";
 	public static final String DOOR_EMERALD_NAME = "Emerald Door";
 	public static final String DOOR_EMERALD_ICON = "emeraldDoor";
+
+    public static final String DUCT_TAPE_KEY = "ducttape";
+    public static final String DUCT_TAPE_UNLOCALIZED_NAME = "ductTape";
+    public static final String DUCT_TAPE_NAME = "Duct Tape";
+    public static final String DUCT_TAPE_ICON = "itemducttape";
+
+    public static final String PERMAICE_SHARD_KEY = "permaIceShard";
+    public static final String PERMAICE_SHARD_UNLOCALIZED_NAME = "permaIceShard";
+    public static final String PERMAICE_SHARD_NAME = "Perma-Ice Shard";
+    public static final String PERMAICE_SHARD_ICON = "permaIceShard";
+
+    public static final String PERMAICE_HELM_KEY = "permaIceHelm";
+    public static final String PERMAICE_HELM_UNLOCALIZED_NAME = "permaIceHelm";
+    public static final String PERMAICE_HELM_NAME = "Perma-Ice Helmet";
+    public static final String PERMAICE_HELM_ICON = "itempermaicehelm";
+
+    public static final String PERMAICE_BODY_KEY = "permaIceBody";
+    public static final String PERMAICE_BODY_UNLOCALIZED_NAME = "permaIceBody";
+    public static final String PERMAICE_BODY_NAME = "Perma-Ice Chestplate";
+    public static final String PERMAICE_BODY_ICON = "itempermaicebody";
+
+    public static final String PERMAICE_LEGS_KEY = "permaIceLegs";
+    public static final String PERMAICE_LEGS_UNLOCALIZED_NAME = "permaIceLegs";
+    public static final String PERMAICE_LEGS_NAME = "Perma-Ice Leggings";
+    public static final String PERMAICE_LEGS_ICON = "itempermaicelegs";
+
+    public static final String PERMAICE_BOOTS_KEY = "permaIceBoots";
+    public static final String PERMAICE_BOOTS_UNLOCALIZED_NAME = "permaIceBoots";
+    public static final String PERMAICE_BOOTS_NAME = "Perma-Ice Boots";
+    public static final String PERMAICE_BOOTS_ICON = "itempermaiceboots";
 }
