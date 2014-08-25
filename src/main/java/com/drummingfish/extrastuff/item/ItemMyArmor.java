@@ -22,7 +22,7 @@ public class ItemMyArmor extends ItemArmor {
 //    }
 
     @Override
-	public String getArmorTexture(ItemStack stack, Entity entity, int slot, int layer) {
+	public String getArmorTexture(ItemStack stack, Entity entity, int slot, String renderType) {
 		if (this.armorType == 2) {
 			return "minecraft:textures/models/armor/permaice_1.png";
 		}
@@ -32,16 +32,16 @@ public class ItemMyArmor extends ItemArmor {
 	}
 			
 	public void registerIcons(IIconRegister register) {
-		if (this == Items.permaIceHelm) {
+		if (this == ItemsES.permaIceHelm) {
 			register.registerIcon(ItemInfo.TEXTURE_LOCATION + ":" + ItemInfo.PERMAICE_HELM_ICON);
 		}
-		if (this == Items.permaIceBody) {
+		if (this == ItemsES.permaIceBody) {
 			register.registerIcon(ItemInfo.TEXTURE_LOCATION + ":" + ItemInfo.PERMAICE_BODY_ICON);
 		}
-		if (this == Items.permaIceLegs) {
+		if (this == ItemsES.permaIceLegs) {
 			register.registerIcon(ItemInfo.TEXTURE_LOCATION + ":" + ItemInfo.PERMAICE_LEGS_ICON);
 		}
-		if (this == Items.permaIceBoots) {
+		if (this == ItemsES.permaIceBoots) {
 			register.registerIcon(ItemInfo.TEXTURE_LOCATION + ":" + ItemInfo.PERMAICE_BOOTS_ICON);
 		}
 	}
