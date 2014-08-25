@@ -3,11 +3,10 @@ package com.drummingfish.extrastuff.item;
 import com.drummingfish.extrastuff.tab.ExtraStuffTab;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
-import net.minecraft.world.World;
 
 public class ItemMyArmor extends ItemArmor {
 
@@ -21,17 +20,15 @@ public class ItemMyArmor extends ItemArmor {
 //    {
 //		 player.fallDistance = 0.0F;
 //    }
-	
+
+    @Override
 	public String getArmorTexture(ItemStack stack, Entity entity, int slot, int layer) {
-		if (stack == Items.permaIceHelm || stack == Items.permaIceBody || stack == Items.permaIceBoots) {
+		if (this.armorType == 2) {
 			return "minecraft:textures/models/armor/permaice_1.png";
 		}
-		if (stack == Items.permaIceLegs) {
-			return "minecraft:textures/models/armor/permaice_2.png";
-		} else {
-			return null;
-		}
-
+		else {
+            return "minecraft:textures/models/armor/permaice_2.png";
+        }
 	}
 			
 	public void registerIcons(IIconRegister register) {

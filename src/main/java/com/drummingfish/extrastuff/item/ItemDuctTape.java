@@ -1,5 +1,6 @@
 package com.drummingfish.extrastuff.item;
 
+import com.drummingfish.extrastuff.block.BlocksES;
 import com.drummingfish.extrastuff.tab.ExtraStuffTab;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.player.EntityPlayer;
@@ -63,10 +64,10 @@ public class ItemDuctTape extends Item {
         }
         else
         {
-            if (Blocks.ducttape.canPlaceBlockAt(par3World, par4, par5, par6))
+            if (BlocksES.ducttape.canPlaceBlockAt(par3World, par4, par5, par6))
             {
                 --par1ItemStack.stackSize;
-                par3World.setBlock(par4, par5, par6, Blocks.ducttape);
+                par3World.setBlock(par4, par5, par6, BlocksES.ducttape);
             }
 
             return true;
