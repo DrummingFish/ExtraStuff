@@ -2,50 +2,56 @@ package com.drummingfish.extrastuff.block;
 
 import java.util.Random;
 
+import com.drummingfish.extrastuff.item.ItemsES;
+import com.drummingfish.extrastuff.tab.ExtraStuffTab;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import mattsStuff.blocks.Blocks;
 import mattsStuff.items.Items;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import net.minecraft.util.IIcon;
 import net.minecraft.util.Icon;
 import net.minecraft.util.MathHelper;
+import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
 public class BlockOre extends Block
 {
 	@SideOnly(Side.CLIENT)
-	private Icon icon;
+	private IIcon icon;
 	
-    public BlockOre(int par1)
-    {
-        super(par1, Material.rock);
-        this.setCreativeTab(CreativeTabs.tabBlock);
+    public BlockOre() {
+        super(Material.rock);
+        this.setCreativeTab(ExtraStuffTab.EXTRASTUFF_TAB);
     }
     
     @Override
 	@SideOnly(Side.CLIENT)
-	public void registerIcons(IconRegister register) {
+	public void registerBlockIcons(IIconRegister register) {
 		icon = register.registerIcon(BlockInfo.TEXTURE_LOCATION + ":" + BlockInfo.PERMAICE_ORE_ICON);
 	}
     
     @Override
 	@SideOnly(Side.CLIENT)
-	public Icon getIcon(int side, int meta) {
+	public IIcon getIcon(int side, int meta) {
 			return icon;
 	}
 
+    @Override
     /**
      * Returns the ID of the items to drop on destruction.
      */
-    public int idDropped(int par1, Random par2Random, int par3)
+    public Item getItemDropped(int par1, Random par2Random, int par3)
     {
-        	return Items.permaIceShard.itemID;
+        	return ItemsES.permaIceShard;
     }
 
+    @Override
     /**
      * Returns the quantity of items to drop on block destruction.
      */
@@ -54,12 +60,13 @@ public class BlockOre extends Block
         return 1 + par1Random.nextInt(1);
     }
 
+    @Override
     /**
      * Returns the usual quantity dropped by the block plus a bonus of 1 to 'i' (inclusive).
      */
     public int quantityDroppedWithBonus(int par1, Random par2Random)
     {
-        if (par1 > 0 && this.blockID != this.idDropped(0, par2Random, par1))
+        if (par1 > 0 && Item.getItemFromBlock(this) != this.getItemDropped(0, par2Random, par1))
         {
             int j = par2Random.nextInt(par1 + 2) - 1;
 
@@ -84,17 +91,19 @@ public class BlockOre extends Block
         super.dropBlockAsItemWithChance(par1World, par2, par3, par4, par5, par6, par7);
 
     }
-    
+
+    private Random rand = new Random();
+
     @Override
-    public int getExpDrop(World par1World, int par5, int par7)
+    public int getExpDrop(IBlockAccess par1World, int par5, int par7)
     {
-        if (this.idDropped(par5, par1World.rand, par7) != this.blockID)
+        if (this.getItemDropped(par5, rand, par7) != Item.getItemFromBlock(this))
         {
             int j1 = 0;
 
-            if (this.blockID == Blocks.orePermaIce.blockID)
+            if (this == BlocksES.orePermaIce)
             {
-                j1 = MathHelper.getRandomIntegerInRange(par1World.rand, 2, 5);
+                j1 = MathHelper.getRandomIntegerInRange(rand, 2, 5);
             }
             return j1;
         }

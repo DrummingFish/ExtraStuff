@@ -20,6 +20,12 @@ public class BlocksES {
 	
 	public static Block trapDoorIron;
 
+    public static Block ducttape;
+
+    public static Block window;
+
+    public static Block orePermaIce;
+
 	public static void init() {
 		buttonIron = new BlockButtonIron().setBlockTextureName("iron_block");
 		GameRegistry.registerBlock(buttonIron, BlockInfo.BUTTON_IRON_KEY);
@@ -53,5 +59,14 @@ public class BlocksES {
 		
 		trapDoorIron = new BlockIronTrapDoor(Material.iron);
 		GameRegistry.registerBlock(trapDoorIron, BlockInfo.TRAPDOOR_IRON_KEY);
+
+        ducttape = new BlockDuctTape();
+        GameRegistry.registerBlock(ducttape, BlockInfo.DUCT_TAPE_KEY);
+
+        window = new BlockWindow(Material.glass);
+        GameRegistry.registerBlock(window, BlockInfo.WINDOW_KEY);
+
+        orePermaIce = new BlockOre();
+        GameRegistry.registerBlock(orePermaIce, BlockInfo.PERMAICE_ORE_KEY);
 	}
 }

@@ -3,11 +3,14 @@ package com.drummingfish.extrastuff.block;
 import java.util.Random;
 
 import com.drummingfish.extrastuff.item.ItemInfo;
+import com.drummingfish.extrastuff.item.ItemsES;
+import com.drummingfish.extrastuff.tab.ExtraStuffTab;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockRedstoneWire;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Items;
+import net.minecraft.init.Blocks;
+import net.minecraft.item.Item;
 import net.minecraft.util.Direction;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.IBlockAccess;
@@ -28,8 +31,8 @@ public class BlockDuctTape extends BlockRedstoneWire {
 	
 	public BlockDuctTape() {
 		super();
-		
-		setCreativeTab(CreativeTabs.tabMisc);
+
+        this.setCreativeTab(ExtraStuffTab.EXTRASTUFF_TAB);
 		setHardness(1F);
 		setStepSound(Block.soundTypeCloth);
 		this.setBlockName(BlockInfo.DUCT_TAPE_UNLOCALIZED_NAME);
@@ -43,13 +46,13 @@ public class BlockDuctTape extends BlockRedstoneWire {
 	@Override
 	public boolean canPlaceBlockAt(World par1World, int par2, int par3, int par4)
     {
-        return par1World.doesBlockHaveSolidTopSurface(par2, par3 - 1, par4);
+        return true;
     }
 	
 	@Override
-	public int idDropped(int par1, Random par2Random, int par3)
+	public Item getItemDropped(int par1, Random par2Random, int par3)
     {
-        return Items.ducttape.itemID;
+        return ItemsES.ducttape;
     }
 	
 	@Override
@@ -59,19 +62,18 @@ public class BlockDuctTape extends BlockRedstoneWire {
     }
 	
 	@Override
-	public int idPicked(World par1World, int par2, int par3, int par4)
+	public Item getItem(World par1World, int par2, int par3, int par4)
     {
-        return Items.ducttape.itemID;
+        return ItemsES.ducttape;
     }
 
     @SideOnly(Side.CLIENT)
-
     /**
      * When this method is called, your block should register all the icons it needs with the given IconRegister. This
      * is the only chance you get to register icons.
      */
     @Override
-    public void registerIcons(IconRegister par1IconRegister)
+    public void registerBlockIcons(IIconRegister par1IconRegister)
     {
         this.tapeCross = par1IconRegister.registerIcon(this.getTextureName() + "_" + "cross");
         this.tapeLine = par1IconRegister.registerIcon(this.getTextureName() + "_" + "line");
@@ -82,29 +84,25 @@ public class BlockDuctTape extends BlockRedstoneWire {
     
     public static boolean isPowerProviderOrWire(IBlockAccess par0IBlockAccess, int par1, int par2, int par3, int par4)
     {
-        int i1 = par0IBlockAccess.getBlockId(par1, par2, par3);
+        Block block = par0IBlockAccess.getBlock(par1, par2, par3);
 
-        if (i1 == Blocks.ducttape.blockID)
+        if (block == BlocksES.ducttape)
         {
             return true;
         }
-        else if (i1 == 0)
+        else if (!Blocks.unpowered_repeater.func_149907_e(block))
         {
-            return false;
-        }
-        else if (!Block.redstoneRepeaterIdle.func_94487_f(i1))
-        {
-            return (Block.blocksList[i1] != null && Block.blocksList[i1].canConnectRedstone(par0IBlockAccess, par1, par2, par3, par4));
+            return block.canConnectRedstone(par0IBlockAccess, par1, par2, par3, par4);
         }
         else
         {
-            int j1 = par0IBlockAccess.getBlockMetadata(par1, par2, par3);
-            return par4 == (j1 & 3) || par4 == Direction.rotateOpposite[j1 & 3];
+            int blockMeta = par0IBlockAccess.getBlockMetadata(par1, par2, par3);
+            return par4 == (blockMeta & 3) || par4 == Direction.rotateOpposite[blockMeta & 3];
         }
     }
-    
+
     @SideOnly(Side.CLIENT)
-    public static Icon getTapeIcon(String par0Str)
+    public static IIcon getTapeIcon(String par0Str)
     {
         return par0Str.equals("cross") ? tapeCross : (par0Str.equals("line") ? tapeLine : (par0Str.equals("cross_overlay") ? tapeCrossOverlay : (par0Str.equals("line_overlay") ? tapeLineOverlay : null)));
     }

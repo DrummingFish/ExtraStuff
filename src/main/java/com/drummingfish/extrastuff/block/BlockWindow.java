@@ -1,51 +1,39 @@
 package com.drummingfish.extrastuff.block;
 
-import java.util.Random;
-
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockBreakable;
-import net.minecraft.block.BlockDirectional;
 import net.minecraft.block.BlockFenceGate;
-import net.minecraft.block.BlockHalfSlab;
-import net.minecraft.block.BlockStairs;
-import net.minecraft.block.BlockTrapDoor;
 import net.minecraft.block.material.Material;
-import net.minecraft.client.renderer.texture.IconRegister;
+import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.AxisAlignedBB;
-import net.minecraft.util.Icon;
-import net.minecraft.util.MathHelper;
-import net.minecraft.util.MovingObjectPosition;
-import net.minecraft.util.Vec3;
+import net.minecraft.util.*;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
-import net.minecraftforge.common.ForgeDirection;
 
 public class BlockWindow extends BlockFenceGate
 {
 	public static boolean disableValidation = false;
 	
-    public BlockWindow(int par1, Material par2Material)
+    public BlockWindow(Material par2Material)
     {
-        super(par1);
+        super();
         this.setCreativeTab(CreativeTabs.tabBlock);
-        setUnlocalizedName(BlockInfo.WINDOW_UNLOCALIZED_NAME);
+        this.setBlockName(BlockInfo.WINDOW_UNLOCALIZED_NAME);
     }
     
     @SideOnly(Side.CLIENT)
-
     /**
      * From the specified side and block metadata retrieves the blocks texture. Args: side, metadata
      */
     @Override
-    public Icon getIcon(int par1, int par2)
+    public IIcon getIcon(int par1, int par2)
     {
-        return Block.glass.getBlockTextureFromSide(par1);
+        return Blocks.glass.getBlockTextureFromSide(par1);
     }
     
     /**
@@ -53,7 +41,7 @@ public class BlockWindow extends BlockFenceGate
      */
     public boolean canPlaceBlockAt(World par1World, int par2, int par3, int par4)
     {
-        return !par1World.getBlockMaterial(par2, par3 - 1, par4).isSolid() ? false : super.canPlaceBlockAt(par1World, par2, par3, par4);
+        return !par1World.getBlock(par2, par3, par4).isReplaceable(par1World, par2, par3, par4);
     }
 
     /**
@@ -63,7 +51,7 @@ public class BlockWindow extends BlockFenceGate
     public AxisAlignedBB getCollisionBoundingBoxFromPool(World par1World, int par2, int par3, int par4)
     {
         int l = par1World.getBlockMetadata(par2, par3, par4);
-        return isFenceGateOpen(l) ? null : (l != 2 && l != 0 ? AxisAlignedBB.getAABBPool().getAABB((double)((float)par2 + 0.375F), (double)par3, (double)par4, (double)((float)par2 + 0.625F), (double)((float)par3 + 1.5F), (double)(par4 + 1)) : AxisAlignedBB.getAABBPool().getAABB((double)par2, (double)par3, (double)((float)par4 + 0.375F), (double)(par2 + 1), (double)((float)par3 + 1.5F), (double)((float)par4 + 0.625F)));
+        return isFenceGateOpen(l) ? null : (l != 2 && l != 0 ? AxisAlignedBB.getBoundingBox((double) ((float) par2 + 0.375F), (double) par3, (double) par4, (double) ((float) par2 + 0.625F), (double) ((float) par3 + 1.5F), (double) (par4 + 1)) : AxisAlignedBB.getBoundingBox((double) par2, (double) par3, (double) ((float) par4 + 0.375F), (double) (par2 + 1), (double) ((float) par3 + 1.5F), (double) ((float) par4 + 0.625F)));
     }
 
     /**
@@ -154,14 +142,14 @@ public class BlockWindow extends BlockFenceGate
      * Lets the block know when one of its neighbor changes. Doesn't know which neighbor changed (coordinates passed are
      * their own) Args: x, y, z, neighbor blockID
      */
-    public void onNeighborBlockChange(World par1World, int par2, int par3, int par4, int par5)
+    public void onNeighborBlockChange(World par1World, int par2, int par3, int par4, Block par5)
     {
         if (!par1World.isRemote)
         {
             int i1 = par1World.getBlockMetadata(par2, par3, par4);
             boolean flag = par1World.isBlockIndirectlyGettingPowered(par2, par3, par4);
 
-            if (flag || par5 > 0 && Block.blocksList[par5].canProvidePower())
+            if (flag || par5.canProvidePower())
             {
                 if (flag && !isFenceGateOpen(i1))
                 {
@@ -202,6 +190,6 @@ public class BlockWindow extends BlockFenceGate
      * When this method is called, your block should register all the icons it needs with the given IconRegister. This
      * is the only chance you get to register icons.
      */
-    public void registerIcons(IconRegister par1IconRegister) {}
+    public void registerIcons(IIconRegister par1IconRegister) {}
     
 }
