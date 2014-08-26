@@ -20,9 +20,14 @@ public class BlockOre extends Block
 	@SideOnly(Side.CLIENT)
 	private IIcon icon;
 	
-    public BlockOre() {
+    public BlockOre(String type) {
         super(Material.rock);
         this.setCreativeTab(ExtraStuffTab.EXTRASTUFF_TAB);
+        if (type == "permaIceOre") {
+            setBlockName(BlockInfo.PERMAICE_ORE_UNLOCALIZED_NAME);
+        } else {
+            setBlockName("Unknown Ore!");
+        }
     }
     
     @Override

@@ -50,11 +50,16 @@ public class ItemsES {
         mummyLegs = new ItemMyArmor(MUMMY, 6, 2).setUnlocalizedName(ItemInfo.MUMMY_LEGS_UNLOCALIZED_NAME);
         mummyBoots = new ItemMyArmor(MUMMY, 6, 3).setUnlocalizedName(ItemInfo.MUMMY_BOOTS_UNLOCALIZED_NAME);
 
-        GameRegistry.registerItem(chainmail, "chainmail");
+        GameRegistry.registerItem(chainmail, ItemInfo.CHAINMAIL_KEY);
 
         GameRegistry.registerItem(ironNugget, ItemInfo.IRON_NUGGET_KEY);
 
         GameRegistry.registerItem(ducttape, ItemInfo.DUCT_TAPE_KEY);
+
+        GameRegistry.registerItem(permaIceHelm, ItemInfo.PERMAICE_HELM_KEY);
+        GameRegistry.registerItem(permaIceBody, ItemInfo.PERMAICE_BODY_KEY);
+        GameRegistry.registerItem(permaIceLegs, ItemInfo.PERMAICE_LEGS_KEY);
+        GameRegistry.registerItem(permaIceBoots, ItemInfo.PERMAICE_BOOTS_KEY);
 
         GameRegistry.registerItem(mummyHelm, ItemInfo.MUMMY_HELM_KEY);
         GameRegistry.registerItem(mummyBody, ItemInfo.MUMMY_BODY_KEY);

@@ -6,6 +6,7 @@ import com.drummingfish.extrastuff.item.ItemsES;
 import com.drummingfish.extrastuff.proxy.CommonProxy;
 import com.drummingfish.extrastuff.recipes.Recipes;
 import com.drummingfish.extrastuff.utilities.LogHelper;
+import com.drummingfish.extrastuff.world.WorldGenOre;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -13,6 +14,7 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
 
 @Mod(modid = ModInfo.ID, name = ModInfo.NAME, version = ModInfo.VERSION)
 
@@ -30,13 +32,14 @@ public class ExtraStuff {
 	public void preInit(FMLPreInitializationEvent event) {
 		ConfigHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigHandler());
-        LogHelper.info("Pre-Initialization Complete!");
 
 		ItemsES.init();
 		BlocksES.init();
 
 		proxy.initSounds();
 		proxy.initRenderers();
+
+        LogHelper.info("Pre-Initialization Complete!");
 	}
 	
 	@EventHandler
@@ -45,7 +48,7 @@ public class ExtraStuff {
 		
 		Recipes.registerRecipes();
 
-		// LanguageRegistry.instance().addStringLocalization("itemGroup.Extra Stuff", "Extra Stuff");
+        GameRegistry.registerWorldGenerator(new WorldGenOre(), 5);
 
         LogHelper.info("Initialization Complete!");
     }

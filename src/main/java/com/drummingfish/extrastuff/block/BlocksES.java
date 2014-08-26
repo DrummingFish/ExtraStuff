@@ -66,7 +66,7 @@ public class BlocksES {
         window = new BlockWindow(Material.glass);
         GameRegistry.registerBlock(window, BlockInfo.WINDOW_KEY);
 
-        orePermaIce = new BlockOre();
+        orePermaIce = new BlockOre("permaIceOre");
         GameRegistry.registerBlock(orePermaIce, BlockInfo.PERMAICE_ORE_KEY);
 	}
 }
