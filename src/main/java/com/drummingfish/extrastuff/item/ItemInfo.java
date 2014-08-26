@@ -64,4 +64,29 @@ public class ItemInfo {
     public static final String PERMAICE_BOOTS_UNLOCALIZED_NAME = "permaIceBoots";
     public static final String PERMAICE_BOOTS_NAME = "Perma-Ice Boots";
     public static final String PERMAICE_BOOTS_ICON = "itempermaiceboots";
+
+    public static final String TOILET_ROLL_KEY = "toiletRoll";
+    public static final String TOILET_ROLL_UNLOCALIZED_NAME = "toiletRoll";
+    public static final String TOILET_ROLL_NAME = "Toilet Roll";
+    public static final String TOILET_ROLL_ICON = "toilet_roll";
+
+    public static final String MUMMY_HELM_KEY = "mummyHelm";
+    public static final String MUMMY_HELM_UNLOCALIZED_NAME = "mummyHelm";
+    public static final String MUMMY_HELM_NAME = "Mummy Helm";
+    public static final String MUMMY_HELM_ICON = "mummy_helm";
+
+    public static final String MUMMY_BODY_KEY = "toiletRoll";
+    public static final String MUMMY_BODY_UNLOCALIZED_NAME = "toiletRoll";
+    public static final String MUMMY_BODY_NAME = "Toilet Roll";
+    public static final String MUMMY_BODY_ICON = "toilet_roll";
+
+    public static final String MUMMMY_LEGS_KEY = "toiletRoll";
+    public static final String MUMMY_LEGS_UNLOCALIZED_NAME = "toiletRoll";
+    public static final String MUMMY_LEGS_NAME = "Toilet Roll";
+    public static final String MUMMY_LEGS_ICON = "toilet_roll";
+
+    public static final String MUMMY_BOOTS_KEY = "toiletRoll";
+    public static final String MUMMY_BOOTS_UNLOCALIZED_NAME = "toiletRoll";
+    public static final String MUMMY_BOOTS_NAME = "Toilet Roll";
+    public static final String MUMMY_BOOTS_ICON = "toilet_roll";
 }
