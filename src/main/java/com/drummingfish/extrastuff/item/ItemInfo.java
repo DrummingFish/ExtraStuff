@@ -72,12 +72,12 @@ public class ItemInfo {
 
     public static final String MUMMY_HELM_KEY = "mummyHelm";
     public static final String MUMMY_HELM_UNLOCALIZED_NAME = "mummyHelm";
-    public static final String MUMMY_HELM_NAME = "Mummy Helm";
+    public static final String MUMMY_HELM_NAME = "Mummy Mask";
     public static final String MUMMY_HELM_ICON = "mummy_helm";
 
     public static final String MUMMY_BODY_KEY = "mummyBody";
     public static final String MUMMY_BODY_UNLOCALIZED_NAME = "mummyBody";
-    public static final String MUMMY_BODY_NAME = "Mummy Top";
+    public static final String MUMMY_BODY_NAME = "Mummy Body";
     public static final String MUMMY_BODY_ICON = "mummy_body";
 
     public static final String MUMMY_LEGS_KEY = "mummyLegs";

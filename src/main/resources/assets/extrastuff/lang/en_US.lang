@@ -1,3 +1,17 @@
 item.chainmail.name=Chainmail
 item.ironNugget.name=Iron Nugget
+item.ducttape.name=Duct Tape
+item.toiletRoll.name=Toilet Roll
+item.permaIceShard.name=Perma-Ice Shard
+
+item.permaIceHelm.name=Perma-Ice Helmet
+item.permaIceBody.name=Perma-Ice Chestplate
+item.permaIceLegs.name=Perma-Ice Leggings
+item.permaIceBoots.name=Perma-Ice Boots
+
+item.mummyHelm.name=Mummy Mask
+item.mummyBody.name=Mummy Body
+item.mummyLegs.name=Mummy Legs
+item.mummyBoots.name=Mummy Shoes
+
 itemGroup.extrastuff=Extra Stuff
