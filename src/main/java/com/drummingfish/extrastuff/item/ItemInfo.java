@@ -75,18 +75,18 @@ public class ItemInfo {
     public static final String MUMMY_HELM_NAME = "Mummy Helm";
     public static final String MUMMY_HELM_ICON = "mummy_helm";
 
-    public static final String MUMMY_BODY_KEY = "toiletRoll";
-    public static final String MUMMY_BODY_UNLOCALIZED_NAME = "toiletRoll";
-    public static final String MUMMY_BODY_NAME = "Toilet Roll";
-    public static final String MUMMY_BODY_ICON = "toilet_roll";
+    public static final String MUMMY_BODY_KEY = "mummyBody";
+    public static final String MUMMY_BODY_UNLOCALIZED_NAME = "mummyBody";
+    public static final String MUMMY_BODY_NAME = "Mummy Top";
+    public static final String MUMMY_BODY_ICON = "mummy_body";
 
-    public static final String MUMMMY_LEGS_KEY = "toiletRoll";
-    public static final String MUMMY_LEGS_UNLOCALIZED_NAME = "toiletRoll";
-    public static final String MUMMY_LEGS_NAME = "Toilet Roll";
-    public static final String MUMMY_LEGS_ICON = "toilet_roll";
+    public static final String MUMMY_LEGS_KEY = "mummyLegs";
+    public static final String MUMMY_LEGS_UNLOCALIZED_NAME = "mummyLegs";
+    public static final String MUMMY_LEGS_NAME = "Mummy Leggings";
+    public static final String MUMMY_LEGS_ICON = "mummy_legs";
 
-    public static final String MUMMY_BOOTS_KEY = "toiletRoll";
-    public static final String MUMMY_BOOTS_UNLOCALIZED_NAME = "toiletRoll";
-    public static final String MUMMY_BOOTS_NAME = "Toilet Roll";
-    public static final String MUMMY_BOOTS_ICON = "toilet_roll";
+    public static final String MUMMY_BOOTS_KEY = "mummyBoots";
+    public static final String MUMMY_BOOTS_UNLOCALIZED_NAME = "mummyBoots";
+    public static final String MUMMY_BOOTS_NAME = "Mummy Shoes";
+    public static final String MUMMY_BOOTS_ICON = "mummy_boots";
 }

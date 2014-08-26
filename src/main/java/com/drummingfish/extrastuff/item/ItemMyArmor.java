@@ -45,17 +45,17 @@ public class ItemMyArmor extends ItemArmor {
 			register.registerIcon(ItemInfo.TEXTURE_LOCATION + ":" + ItemInfo.PERMAICE_BOOTS_ICON);
 		}
 
-        if (this == ItemsES.permaIceHelm) {
-            register.registerIcon(ItemInfo.TEXTURE_LOCATION + ":" + ItemInfo.PERMAICE_HELM_ICON);
+        if (this == ItemsES.mummyHelm) {
+            register.registerIcon(ItemInfo.TEXTURE_LOCATION + ":" + ItemInfo.MUMMY_HELM_ICON);
         }
-        if (this == ItemsES.permaIceBody) {
-            register.registerIcon(ItemInfo.TEXTURE_LOCATION + ":" + ItemInfo.PERMAICE_BODY_ICON);
+        if (this == ItemsES.mummyBody) {
+            register.registerIcon(ItemInfo.TEXTURE_LOCATION + ":" + ItemInfo.MUMMY_BODY_ICON);
         }
-        if (this == ItemsES.permaIceLegs) {
-            register.registerIcon(ItemInfo.TEXTURE_LOCATION + ":" + ItemInfo.PERMAICE_LEGS_ICON);
+        if (this == ItemsES.mummyLegs) {
+            register.registerIcon(ItemInfo.TEXTURE_LOCATION + ":" + ItemInfo.MUMMY_LEGS_ICON);
         }
-        if (this == ItemsES.permaIceBoots) {
-            register.registerIcon(ItemInfo.TEXTURE_LOCATION + ":" + ItemInfo.PERMAICE_BOOTS_ICON);
+        if (this == ItemsES.mummyBoots) {
+            register.registerIcon(ItemInfo.TEXTURE_LOCATION + ":" + ItemInfo.MUMMY_BOOTS_ICON);
         }
 	}
 }
