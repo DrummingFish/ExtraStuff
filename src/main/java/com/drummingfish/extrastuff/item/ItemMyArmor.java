@@ -3,8 +3,6 @@ package com.drummingfish.extrastuff.item;
 import com.drummingfish.extrastuff.tab.ExtraStuffTab;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.Entity;
-import net.minecraft.init.Items;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 

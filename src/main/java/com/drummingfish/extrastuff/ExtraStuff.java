@@ -5,17 +5,14 @@ import com.drummingfish.extrastuff.config.ConfigHandler;
 import com.drummingfish.extrastuff.item.ItemsES;
 import com.drummingfish.extrastuff.proxy.CommonProxy;
 import com.drummingfish.extrastuff.recipes.Recipes;
-import com.drummingfish.extrastuff.tab.ExtraStuffTab;
 import com.drummingfish.extrastuff.utilities.LogHelper;
 import cpw.mods.fml.common.FMLCommonHandler;
-import net.minecraft.creativetab.CreativeTabs;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import cpw.mods.fml.common.registry.LanguageRegistry;
 
 @Mod(modid = ModInfo.ID, name = ModInfo.NAME, version = ModInfo.VERSION)
 

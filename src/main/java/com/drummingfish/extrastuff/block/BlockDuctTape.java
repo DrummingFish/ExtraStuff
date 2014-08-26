@@ -1,22 +1,21 @@
 package com.drummingfish.extrastuff.block;
 
-import java.util.Random;
-
 import com.drummingfish.extrastuff.item.ItemInfo;
 import com.drummingfish.extrastuff.item.ItemsES;
 import com.drummingfish.extrastuff.tab.ExtraStuffTab;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockRedstoneWire;
 import net.minecraft.client.renderer.texture.IIconRegister;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.util.Direction;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
+
+import java.util.Random;
 
 public class BlockDuctTape extends BlockRedstoneWire {
 

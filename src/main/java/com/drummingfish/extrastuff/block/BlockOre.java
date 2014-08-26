@@ -1,7 +1,5 @@
 package com.drummingfish.extrastuff.block;
 
-import java.util.Random;
-
 import com.drummingfish.extrastuff.item.ItemsES;
 import com.drummingfish.extrastuff.tab.ExtraStuffTab;
 import cpw.mods.fml.relauncher.Side;
@@ -14,6 +12,8 @@ import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+
+import java.util.Random;
 
 public class BlockOre extends Block
 {
