@@ -25,6 +25,7 @@ public class BlockOre extends Block
         this.setCreativeTab(ExtraStuffTab.EXTRASTUFF_TAB);
         if (type == "permaIceOre") {
             setBlockName(BlockInfo.PERMAICE_ORE_UNLOCALIZED_NAME);
+            this.setBlockTextureName(BlockInfo.TEXTURE_LOCATION + ":" + BlockInfo.PERMAICE_ORE_ICON);
         } else {
             setBlockName("Unknown Ore!");
         }

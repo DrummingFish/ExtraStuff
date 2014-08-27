@@ -27,36 +27,37 @@ public class BlockInfo {
 	public static final String LEVER_IRON_KEY = "IronLever";
 	public static final String LEVER_IRON_UNLOCALIZED_NAME = "ironLever";
 	public static final String LEVER_IRON_NAME = "Iron Lever";
-	public static final String LEVER_IRON_ICON = "ironLever";
+	public static final String LEVER_IRON_ICON = "iron_lever";
 
 	public static final String LEVER_GOLD_KEY = "GoldLever";
 	public static final String LEVER_GOLD_UNLOCALIZED_NAME = "goldLever";
 	public static final String LEVER_GOLD_NAME = "Gold Lever";
-	public static final String LEVER_GOLD_ICON = "goldLever";
+	public static final String LEVER_GOLD_ICON = "gold_lever";
 
 	public static final String LEVER_DIAMOND_KEY = "DiamondLever";
 	public static final String LEVER_DIAMOND_UNLOCALIZED_NAME = "diamondLever";
 	public static final String LEVER_DIAMOND_NAME = "Diamond Lever";
-	public static final String LEVER_DIAMOND_ICON = "diamondLever";
+	public static final String LEVER_DIAMOND_ICON = "diamond_lever";
 
 	public static final String LEVER_EMERALD_KEY = "EmeraldLever";
 	public static final String LEVER_EMERALD_UNLOCALIZED_NAME = "emeraldLever";
 	public static final String LEVER_EMERALD_NAME = "Emerald Lever";
-	public static final String LEVER_EMERALD_ICON = "emeraldLever";
+	public static final String LEVER_EMERALD_ICON = "emerald_lever";
 
 	public static final String LEVER_OBSIDIAN_KEY = "ObsidianLever";
 	public static final String LEVER_OBSIDIAN_UNLOCALIZED_NAME = "obsidianLever";
 	public static final String LEVER_OBSIDIAN_NAME = "Obsidian Lever";
-	public static final String LEVER_OBSIDIAN_ICON = "obsidianLever";
+	public static final String LEVER_OBSIDIAN_ICON = "obsidian_lever";
 
 	public static final String TRAPDOOR_IRON_KEY = "IronTrapDoor";
 	public static final String TRAPDOOR_IRON_UNLOCALIZED_NAME = "ironTrapDoor";
 	public static final String TRAPDOOR_IRON_NAME = "Iron Trapdoor";
-	public static final String TRAPDOOR_IRON_ICON = "ironTrapDoor";
+	public static final String TRAPDOOR_IRON_ICON = "iron_trapdoor";
 
     public static final String DUCT_TAPE_KEY = "DuctTape";
     public static final String DUCT_TAPE_UNLOCALIZED_NAME = "ductTape";
     public static final String DUCT_TAPE_NAME = "Duct Tape";
+    public static final String DUCT_TAPE_ICON = "duct_tape";
 
     public static final String WINDOW_KEY = "Window";
     public static final String WINDOW_UNLOCALIZED_NAME = "window";
@@ -65,5 +66,5 @@ public class BlockInfo {
     public static final String PERMAICE_ORE_KEY = "OrePermaIce";
     public static final String PERMAICE_ORE_UNLOCALIZED_NAME = "orePermaIce";
     public static final String PERMAICE_ORE_NAME = "Perma-Ice Ore";
-    public static final String PERMAICE_ORE_ICON = "orePermaice";
+    public static final String PERMAICE_ORE_ICON = "permaice_ore";
 }

@@ -1,5 +1,6 @@
 package com.drummingfish.extrastuff.block;
 
+import com.drummingfish.extrastuff.tab.ExtraStuffTab;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
@@ -24,7 +25,7 @@ public class BlockWindow extends BlockFenceGate
     public BlockWindow(Material par2Material)
     {
         super();
-        this.setCreativeTab(CreativeTabs.tabBlock);
+        this.setCreativeTab(ExtraStuffTab.EXTRASTUFF_TAB);
         this.setBlockName(BlockInfo.WINDOW_UNLOCALIZED_NAME);
     }
     
