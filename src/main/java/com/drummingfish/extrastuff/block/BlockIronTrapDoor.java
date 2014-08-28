@@ -16,6 +16,7 @@ public class BlockIronTrapDoor extends BlockTrapDoor {
 		super(par2Material);
 		this.setBlockName(BlockInfo.TRAPDOOR_IRON_UNLOCALIZED_NAME);
         this.setCreativeTab(ExtraStuffTab.EXTRASTUFF_TAB);
+        this.setBlockTextureName(BlockInfo.TEXTURE_LOCATION + ":" + BlockInfo.TRAPDOOR_IRON_ICON);
 		setHardness(5.0F);
 	}
 	
@@ -24,9 +25,10 @@ public class BlockIronTrapDoor extends BlockTrapDoor {
     public IIcon getIcon(int side, int meta) {
         return trapDoorIcon;
     }
-	
+
+    @Override
 	@SideOnly(Side.CLIENT)
-    public void registerIcons(IIconRegister register)
+    public void registerBlockIcons(IIconRegister register)
     {
         trapDoorIcon = register.registerIcon(BlockInfo.TEXTURE_LOCATION + ":" + BlockInfo.TRAPDOOR_IRON_ICON);
     }

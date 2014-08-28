@@ -12,7 +12,6 @@ public class ExtraStuffTab {
         @Override
         public Item getTabIconItem() {
             return ItemsES.chainmail;
-
         }
     };
 }

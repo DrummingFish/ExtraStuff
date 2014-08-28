@@ -26,20 +26,22 @@ public class BlocksES {
 
     public static Block orePermaIce;
 
+    public static Block blockPermaIce;
+
 	public static void init() {
-		buttonIron = new BlockButtonIron().setBlockTextureName("iron_block");
+		buttonIron = new BlockButtonIron();
 		GameRegistry.registerBlock(buttonIron, BlockInfo.BUTTON_IRON_KEY);
 		
-		buttonGold = new BlockButtonGold().setBlockTextureName("gold_block");
+		buttonGold = new BlockButtonGold();
 		GameRegistry.registerBlock(buttonGold, BlockInfo.BUTTON_GOLD_KEY);
 		
-		buttonDiamond = new BlockButtonDiamond().setBlockTextureName("diamond_block");
+		buttonDiamond = new BlockButtonDiamond();
 		GameRegistry.registerBlock(buttonDiamond, BlockInfo.BUTTON_DIAMOND_KEY);
 		
-		buttonEmerald = new BlockButtonEmerald().setBlockTextureName("emerald_block");
+		buttonEmerald = new BlockButtonEmerald();
 		GameRegistry.registerBlock(buttonEmerald, BlockInfo.BUTTON_EMERALD_KEY);
 		
-		buttonObsidian = new BlockButtonObsidian().setBlockTextureName("obsidian");
+		buttonObsidian = new BlockButtonObsidian();
 		GameRegistry.registerBlock(buttonObsidian, BlockInfo.BUTTON_OBSIDIAN_KEY);
 		
 		leverIron = new BlockLeverIron();
@@ -60,13 +62,13 @@ public class BlocksES {
 		trapDoorIron = new BlockIronTrapDoor(Material.iron);
 		GameRegistry.registerBlock(trapDoorIron, BlockInfo.TRAPDOOR_IRON_KEY);
 
-        ducttape = new BlockDuctTape();
-        GameRegistry.registerBlock(ducttape, BlockInfo.DUCT_TAPE_KEY);
-
         window = new BlockWindow(Material.glass);
         GameRegistry.registerBlock(window, BlockInfo.WINDOW_KEY);
 
         orePermaIce = new BlockOre("permaIceOre");
         GameRegistry.registerBlock(orePermaIce, BlockInfo.PERMAICE_ORE_KEY);
+
+        blockPermaIce = new BlockPermaIce(Material.rock);
+        GameRegistry.registerBlock(blockPermaIce, BlockInfo.PERMAICE_BLOCK_KEY);
 	}
 }

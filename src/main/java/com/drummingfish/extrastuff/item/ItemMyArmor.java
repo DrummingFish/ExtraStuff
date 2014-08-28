@@ -1,6 +1,8 @@
 package com.drummingfish.extrastuff.item;
 
 import com.drummingfish.extrastuff.tab.ExtraStuffTab;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.Entity;
 import net.minecraft.item.ItemArmor;
@@ -28,7 +30,9 @@ public class ItemMyArmor extends ItemArmor {
             return "minecraft:textures/models/armor/permaice_2.png";
         }
 	}
-			
+
+    @Override
+    @SideOnly(Side.CLIENT)
 	public void registerIcons(IIconRegister register) {
 		if (this == ItemsES.permaIceHelm) {
 			register.registerIcon(ItemInfo.TEXTURE_LOCATION + ":" + ItemInfo.PERMAICE_HELM_ICON);

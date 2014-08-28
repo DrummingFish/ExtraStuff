@@ -67,4 +67,9 @@ public class BlockInfo {
     public static final String PERMAICE_ORE_UNLOCALIZED_NAME = "orePermaIce";
     public static final String PERMAICE_ORE_NAME = "Perma-Ice Ore";
     public static final String PERMAICE_ORE_ICON = "permaice_ore";
+
+    public static final String PERMAICE_BLOCK_KEY = "BlockPermaIce";
+    public static final String PERMAICE_BLOCK_UNLOCALIZED_NAME = "blockPermaIce";
+    public static final String PERMAICE_BLOCK_NAME = "Perma-Ice Block";
+    public static final String PERMAICE_BLOCK_ICON = "permaice_block";
 }
