@@ -3,21 +3,23 @@ item.ironNugget.name=Iron Nugget
 item.ductTape.name=Duct Tape
 item.toiletRoll.name=Toilet Roll
 item.permaIceShard.name=Perma-Ice Shard
-item.iron_trapdoor.name=Iron Trapdoor
-item.window.name=Window
-item.orePermaIce.name=Perma-Ice Ore
 
-item.ironLever.name=Iron Lever
-item.goldLever.name=Gold Lever
-item.diamondLever.name=Diamond Lever
-item.emeraldLever.name=Emerald Lever
-item.obsidianLever=Obsidian Lever
+tile.ironTrapDoor.name=Iron Trapdoor
+tile.window.name=Window
+tile.orePermaIce.name=Perma-Ice Ore
+tile.blockPermaIce.name=Perma-Ice Block
 
-item.ironButton.name=Iron Button
-item.goldButton.name=Gold Button
-item.diamondButton.name=Diamond Button
-item.emeraldButton.name=Emerald Button
-item.obsidianButton.name=Obsidian Button
+tile.ironLever.name=Iron Lever
+tile.goldLever.name=Gold Lever
+tile.diamondLever.name=Diamond Lever
+tile.emeraldLever.name=Emerald Lever
+tile.obsidianLever.name=Obsidian Lever
+
+tile.ironButton.name=Iron Button
+tile.goldButton.name=Gold Button
+tile.diamondButton.name=Diamond Button
+tile.emeraldButton.name=Emerald Button
+tile.obsidianButton.name=Obsidian Button
 
 item.permaIceHelm.name=Perma-Ice Helmet
 item.permaIceBody.name=Perma-Ice Chestplate

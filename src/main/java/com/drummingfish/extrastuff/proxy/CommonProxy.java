@@ -7,7 +7,7 @@ public class CommonProxy {
 		
 	}
 
-	public void initRenderers() {
+	public void initRenderers(String type) {
 		// TODO Auto-generated method stub
 		
 	}

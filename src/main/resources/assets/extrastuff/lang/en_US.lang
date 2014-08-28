@@ -13,7 +13,7 @@ tile.ironLever.name=Iron Lever
 tile.goldLever.name=Gold Lever
 tile.diamondLever.name=Diamond Lever
 tile.emeraldLever.name=Emerald Lever
-tile.obsidianLever=Obsidian Lever
+tile.obsidianLever.name=Obsidian Lever
 
 tile.ironButton.name=Iron Button
 tile.goldButton.name=Gold Button

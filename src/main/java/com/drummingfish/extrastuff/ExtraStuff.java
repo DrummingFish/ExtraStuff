@@ -37,7 +37,8 @@ public class ExtraStuff {
 		BlocksES.init();
 
 		proxy.initSounds();
-		proxy.initRenderers();
+		proxy.initRenderers("PERMAICE");
+        proxy.initRenderers("MUMMY");
 
         LogHelper.info("Pre-Initialization Complete!");
 	}
