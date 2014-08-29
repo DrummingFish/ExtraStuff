@@ -29,34 +29,34 @@ public class BlocksES {
     public static Block blockPermaIce;
 
 	public static void init() {
-		buttonIron = new BlockButtonIron();
+		buttonIron = new BlockButtons("iron");
 		GameRegistry.registerBlock(buttonIron, BlockInfo.BUTTON_IRON_KEY);
 		
-		buttonGold = new BlockButtonGold();
+		buttonGold = new BlockButtons("gold");
 		GameRegistry.registerBlock(buttonGold, BlockInfo.BUTTON_GOLD_KEY);
 		
-		buttonDiamond = new BlockButtonDiamond();
+		buttonDiamond = new BlockButtons("diamond");
 		GameRegistry.registerBlock(buttonDiamond, BlockInfo.BUTTON_DIAMOND_KEY);
 		
-		buttonEmerald = new BlockButtonEmerald();
+		buttonEmerald = new BlockButtons("emerald");
 		GameRegistry.registerBlock(buttonEmerald, BlockInfo.BUTTON_EMERALD_KEY);
 		
-		buttonObsidian = new BlockButtonObsidian();
+		buttonObsidian = new BlockButtons("obsidian");
 		GameRegistry.registerBlock(buttonObsidian, BlockInfo.BUTTON_OBSIDIAN_KEY);
 		
-		leverIron = new BlockLeverIron();
+		leverIron = new BlockLevers("iron");
 		GameRegistry.registerBlock(leverIron, BlockInfo.LEVER_IRON_KEY);
 		
-		leverGold = new BlockLeverGold();
+		leverGold = new BlockLevers("gold");
 		GameRegistry.registerBlock(leverGold, BlockInfo.LEVER_GOLD_KEY);
 		
-		leverDiamond = new BlockLeverDiamond();
+		leverDiamond = new BlockLevers("diamond");
 		GameRegistry.registerBlock(leverDiamond, BlockInfo.LEVER_DIAMOND_KEY);
 		
-		leverEmerald = new BlockLeverEmerald();
+		leverEmerald = new BlockLevers("emerald");
 		GameRegistry.registerBlock(leverEmerald, BlockInfo.LEVER_EMERALD_KEY);
 		
-		leverObsidian = new BlockLeverObsidian();
+		leverObsidian = new BlockLevers("obsidian");
 		GameRegistry.registerBlock(leverObsidian, BlockInfo.LEVER_OBSIDIAN_KEY);
 		
 		trapDoorIron = new BlockIronTrapDoor(Material.iron);
