@@ -31,4 +31,10 @@ item.mummyBody.name=Mummy Body
 item.mummyLegs.name=Mummy Legs
 item.mummyBoots.name=Mummy Shoes
 
+item.permaIceAxe.name=Perma-Ice Axe
+item.permaIceHoe.name=Perma-Ice Hoe
+item.permaIcePickaxe.name=Perma-Ice Pickaxe
+item.permaIceShovel.name=Perma-Ice Shovel
+item.permaIceSword.name=Perma-Ice Sword
+
 itemGroup.extrastuff=Extra Stuff

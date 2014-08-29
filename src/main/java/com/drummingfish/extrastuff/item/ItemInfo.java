@@ -69,4 +69,29 @@ public class ItemInfo {
     public static final String MUMMY_BOOTS_UNLOCALIZED_NAME = "mummyBoots";
     public static final String MUMMY_BOOTS_NAME = "Mummy Shoes";
     public static final String MUMMY_BOOTS_ICON = "mummy_boots";
+
+    public static final String PERMAICE_AXE_KEY = "permaIceAxe";
+    public static final String PERMAICE_AXE_UNLOCALIZED_NAME = "permaIceAxe";
+    public static final String PERMAICE_AXE_NAME = "Perma-Ice Axe";
+    public static final String PERMAICE_AXE_ICON = "permaice_axe";
+
+    public static final String PERMAICE_HOE_KEY = "permaIceHoe";
+    public static final String PERMAICE_HOE_UNLOCALIZED_NAME = "permaIceHoe";
+    public static final String PERMAICE_HOE_NAME = "Perma-Ice Hoe";
+    public static final String PERMAICE_HOE_ICON = "permaice_hoe";
+
+    public static final String PERMAICE_PICKAXE_KEY = "permaIcePickaxe";
+    public static final String PERMAICE_PICKAXE_UNLOCALIZED_NAME = "permaIcePickaxe";
+    public static final String PERMAICE_PICKAXE_NAME = "Perma-Ice Pickaxe";
+    public static final String PERMAICE_PICKAXE_ICON = "permaice_pickaxe";
+
+    public static final String PERMAICE_SHOVEL_KEY = "permaIceShovel";
+    public static final String PERMAICE_SHOVEL_UNLOCALIZED_NAME = "permaIceShovel";
+    public static final String PERMAICE_SHOVEL_NAME = "Perma-Ice Shovel";
+    public static final String PERMAICE_SHOVEL_ICON = "permaice_shovel";
+
+    public static final String PERMAICE_SWORD_KEY = "permaIceSword";
+    public static final String PERMAICE_SWORD_UNLOCALIZED_NAME = "permaIceSword";
+    public static final String PERMAICE_SWORD_NAME = "Perma-Ice Sword";
+    public static final String PERMAICE_SWORD_ICON = "permaice_sword";
 }

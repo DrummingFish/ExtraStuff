@@ -11,7 +11,7 @@ public class ItemChainmail extends Item {
 	public ItemChainmail() {
 		super();
         this.setCreativeTab(ExtraStuffTab.EXTRASTUFF_TAB);
-		this.setUnlocalizedName("chainmail");
+		this.setUnlocalizedName(ItemInfo.CHAINMAIL_UNLOCALIZED_NAME);
 	}
 	
 	@Override

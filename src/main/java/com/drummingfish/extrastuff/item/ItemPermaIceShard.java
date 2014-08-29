@@ -11,7 +11,7 @@ public class ItemPermaIceShard extends Item {
 	public ItemPermaIceShard() {
 		super();
         this.setCreativeTab(ExtraStuffTab.EXTRASTUFF_TAB);
-		setUnlocalizedName(ItemInfo.PERMAICE_SHARD_UNLOCALIZED_NAME);
+		this.setUnlocalizedName(ItemInfo.PERMAICE_SHARD_UNLOCALIZED_NAME);
 	}
 	
 	@Override

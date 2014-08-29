@@ -24,7 +24,7 @@ public class ItemMyArmor extends ItemArmor {
     @Override
     @SideOnly(Side.CLIENT)
 	public String getArmorTexture(ItemStack stack, Entity entity, int slot, String renderType) {
-		if (this == ItemsES.permaIceHelm || this == ItemsES.permaIceBody || this == ItemsES.permaIceBoots) {
+		if (this == ItemsES.permaIceHelm || this == ItemsES.permaIceBody ||this == ItemsES.permaIceLegs || this == ItemsES.permaIceBoots) {
             if (this.armorType == 2) {
                 return "extrastuff:models/armour/permaice_2.png";
             } else {
