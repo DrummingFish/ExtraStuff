@@ -17,7 +17,6 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
-import net.minecraftforge.common.MinecraftForge;
 
 @Mod(modid = ModInfo.ID, name = ModInfo.NAME, version = ModInfo.VERSION)
 
@@ -28,9 +27,7 @@ public class ExtraStuff {
 	
 	@SidedProxy(clientSide = "com.drummingfish.extrastuff.proxy.ClientProxy", serverSide = "com.drummingfish.extrastuff.proxy.CommonProxy")
 	public static CommonProxy proxy;
-	
-	// public static ExtraStuffTab extraStuffTab = new ExtraStuffTab();
-	
+
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		ConfigHandler.init(event.getSuggestedConfigurationFile());

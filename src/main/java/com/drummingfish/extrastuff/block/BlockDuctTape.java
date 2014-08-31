@@ -67,13 +67,8 @@ public class BlockDuctTape extends BlockRedstoneWire {
     }
 
     @SideOnly(Side.CLIENT)
-    /**
-     * When this method is called, your block should register all the icons it needs with the given IconRegister. This
-     * is the only chance you get to register icons.
-     */
     @Override
-    public void registerBlockIcons(IIconRegister par1IconRegister)
-    {
+    public void registerBlockIcons(IIconRegister par1IconRegister) {
         this.tapeCross = par1IconRegister.registerIcon(this.getTextureName() + "_" + "cross");
         this.tapeLine = par1IconRegister.registerIcon(this.getTextureName() + "_" + "line");
         this.tapeCrossOverlay = par1IconRegister.registerIcon(this.getTextureName() + "_" + "cross_overlay");
@@ -81,28 +76,21 @@ public class BlockDuctTape extends BlockRedstoneWire {
         this.blockIcon = this.tapeCross;
     }
     
-    public static boolean isPowerProviderOrWire(IBlockAccess par0IBlockAccess, int par1, int par2, int par3, int par4)
-    {
+    public static boolean isPowerProviderOrWire(IBlockAccess par0IBlockAccess, int par1, int par2, int par3, int par4) {
         Block block = par0IBlockAccess.getBlock(par1, par2, par3);
 
-        if (block == BlocksES.ducttape)
-        {
+        if (block == BlocksES.ducttape) {
             return true;
-        }
-        else if (!Blocks.unpowered_repeater.func_149907_e(block))
-        {
+        } else if (!Blocks.unpowered_repeater.func_149907_e(block)) {
             return block.canConnectRedstone(par0IBlockAccess, par1, par2, par3, par4);
-        }
-        else
-        {
+        } else {
             int blockMeta = par0IBlockAccess.getBlockMetadata(par1, par2, par3);
             return par4 == (blockMeta & 3) || par4 == Direction.rotateOpposite[blockMeta & 3];
         }
     }
 
     @SideOnly(Side.CLIENT)
-    public static IIcon getTapeIcon(String par0Str)
-    {
+    public static IIcon getTapeIcon(String par0Str) {
         return par0Str.equals("cross") ? tapeCross : (par0Str.equals("line") ? tapeLine : (par0Str.equals("cross_overlay") ? tapeCrossOverlay : (par0Str.equals("line_overlay") ? tapeLineOverlay : null)));
     }
 }

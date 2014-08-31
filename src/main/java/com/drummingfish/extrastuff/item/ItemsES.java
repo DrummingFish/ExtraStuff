@@ -11,11 +11,10 @@ import net.minecraftforge.oredict.OreDictionary;
 public class ItemsES {
 
     static ItemArmor.ArmorMaterial armourPERMAICE = EnumHelper.addArmorMaterial("PERMAICE", 20, new int[]{2, 7, 5, 3}, 11);
-    static ItemTool.ToolMaterial toolPERMAICE = EnumHelper.addToolMaterial("PERMAICE", 2, 500, 7F, 3, 9);
-
     static ItemArmor.ArmorMaterial armourMUMMY = EnumHelper.addArmorMaterial("MUMMY", 20, new int[]{1, 2, 2, 1}, 17);
-
     static ItemArmor.ArmorMaterial armourFLOWER = EnumHelper.addArmorMaterial("FLOWER", 4, new int[]{0, 0, 0, 0}, 0);
+
+    static ItemTool.ToolMaterial toolPERMAICE = EnumHelper.addToolMaterial("PERMAICE", 2, 500, 7F, 3, 9);
 
     public static Item chainmail;
 

@@ -3,6 +3,7 @@ item.ironNugget.name=Iron Nugget
 item.ductTape.name=Duct Tape
 item.toiletRoll.name=Toilet Roll
 item.permaIceShard.name=Perma-Ice Shard
+item.permaIceBall.name=Perma-Ice Ball
 
 tile.ironTrapDoor.name=Iron Trapdoor
 tile.window.name=Window
@@ -30,6 +31,11 @@ item.mummyHelm.name=Mummy Mask
 item.mummyBody.name=Mummy Body
 item.mummyLegs.name=Mummy Legs
 item.mummyBoots.name=Mummy Shoes
+
+item.flowerHelm.name=Flower Headband
+item.flowerBody.name=Flower Top
+item.flowerLegs.name=Flower Skirt
+item.flowerBoots.name=Flower Sandals
 
 item.permaIceAxe.name=Perma-Ice Axe
 item.permaIceHoe.name=Perma-Ice Hoe

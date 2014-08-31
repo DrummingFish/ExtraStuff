@@ -32,5 +32,4 @@ public class BlockIronTrapDoor extends BlockTrapDoor {
     {
         trapDoorIcon = register.registerIcon(BlockInfo.TEXTURE_LOCATION + ":" + BlockInfo.TRAPDOOR_IRON_ICON);
     }
-
 }

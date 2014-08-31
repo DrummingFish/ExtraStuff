@@ -18,9 +18,6 @@ public class ItemPermaIceBall extends Item {
         setUnlocalizedName(ItemInfo.PERMAICE_BALL_UNLOCALIZED_NAME);
     }
 
-    /**
-     * Called whenever this item is equipped and the right mouse button is pressed. Args: itemStack, world, entityPlayer
-     */
     public ItemStack onItemRightClick(ItemStack item, World world, EntityPlayer player) {
         if (!player.capabilities.isCreativeMode) {
             --item.stackSize;
