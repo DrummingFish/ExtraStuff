@@ -2,6 +2,7 @@ package com.drummingfish.extrastuff;
 
 import com.drummingfish.extrastuff.block.BlocksES;
 import com.drummingfish.extrastuff.config.ConfigHandler;
+import com.drummingfish.extrastuff.entity.EntityPermaIceBall;
 import com.drummingfish.extrastuff.item.ItemsES;
 import com.drummingfish.extrastuff.proxy.CommonProxy;
 import com.drummingfish.extrastuff.recipes.Recipes;
@@ -14,6 +15,7 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraftforge.common.MinecraftForge;
 
@@ -37,9 +39,15 @@ public class ExtraStuff {
 		ItemsES.init();
 		BlocksES.init();
 
-		proxy.initSounds();
-		proxy.initRenderers("PERMAICE");
-        proxy.initRenderers("MUMMY");
+        int modEntityID = 0;
+
+        EntityRegistry.registerModEntity(EntityPermaIceBall.class, "permaIceBall", ++modEntityID, this, 64, 10, true);
+
+        proxy.initSounds();
+        proxy.initRenderers();
+        proxy.initEntities();
+		proxy.initArmourRenderer("PERMAICE");
+        proxy.initArmourRenderer("MUMMY");
 
         LogHelper.info("Pre-Initialization Complete!");
 	}

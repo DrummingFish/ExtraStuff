@@ -94,4 +94,9 @@ public class ItemInfo {
     public static final String PERMAICE_SWORD_UNLOCALIZED_NAME = "permaIceSword";
     public static final String PERMAICE_SWORD_NAME = "Perma-Ice Sword";
     public static final String PERMAICE_SWORD_ICON = "permaice_sword";
+
+    public static final String PERMAICE_BALL_KEY = "permaIceBall";
+    public static final String PERMAICE_BALL_UNLOCALIZED_NAME = "permaIceBall";
+    public static final String PERMAICE_BALL_NAME = "Perma-Ice Ball";
+    public static final String PERMAICE_BALL_ICON = "permaice_ball";
 }

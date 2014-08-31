@@ -7,8 +7,17 @@ public class CommonProxy {
 		
 	}
 
-	public void initRenderers(String type) {
+	public void initArmourRenderer(String type) {
 		// TODO Auto-generated method stub
 		
 	}
+
+    public void initRenderers() {
+        // TODO Auto-generated method stub
+    }
+
+    public void initEntities() {
+        // TODO Auto-generated method stub
+
+    }
 }

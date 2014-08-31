@@ -41,8 +41,10 @@ public class ItemsES {
     public static Item permaIcePickaxe;
     public static Item permaIceShovel;
     public static Item permaIceSword;
-	
-	public static void init() {
+
+    public static Item permaIceBall;
+
+    public static void init() {
 		chainmail = new ItemChainmail();
 
 		ironNugget = new ItemIronNugget();
@@ -67,6 +69,8 @@ public class ItemsES {
         permaIceShovel = new ItemPermaIceShovel(toolPERMAICE);
         permaIceSword = new ItemPermaIceSword(toolPERMAICE);
 
+        permaIceBall = new ItemPermaIceBall();
+
         GameRegistry.registerItem(chainmail, ItemInfo.CHAINMAIL_KEY);
 
         GameRegistry.registerItem(ironNugget, ItemInfo.IRON_NUGGET_KEY);
@@ -90,6 +94,8 @@ public class ItemsES {
         GameRegistry.registerItem(permaIcePickaxe, ItemInfo.PERMAICE_PICKAXE_KEY);
         GameRegistry.registerItem(permaIceShovel, ItemInfo.PERMAICE_SHOVEL_KEY);
         GameRegistry.registerItem(permaIceSword, ItemInfo.PERMAICE_SWORD_KEY);
+
+        GameRegistry.registerItem(permaIceBall, ItemInfo.PERMAICE_BALL_KEY);
     }
 	
 	public static void oreRegistration() {
