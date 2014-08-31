@@ -15,17 +15,13 @@ import net.minecraft.world.World;
 
 import java.util.Random;
 
-public class BlockOre extends Block
-{
-	@SideOnly(Side.CLIENT)
-	private IIcon icon;
-	
+public class BlockOre extends Block {
+
     public BlockOre(String type) {
         super(Material.rock);
         this.setCreativeTab(ExtraStuffTab.EXTRASTUFF_TAB);
         if (type == "permaIceOre") {
             setBlockName(BlockInfo.PERMAICE_ORE_UNLOCALIZED_NAME);
-            this.setBlockTextureName(BlockInfo.TEXTURE_LOCATION + ":" + BlockInfo.PERMAICE_ORE_ICON);
         } else {
             setBlockName("Unknown Ore!");
         }
@@ -34,13 +30,7 @@ public class BlockOre extends Block
     @Override
 	@SideOnly(Side.CLIENT)
 	public void registerBlockIcons(IIconRegister register) {
-		icon = register.registerIcon(BlockInfo.TEXTURE_LOCATION + ":" + BlockInfo.PERMAICE_ORE_ICON);
-	}
-    
-    @Override
-	@SideOnly(Side.CLIENT)
-	public IIcon getIcon(int side, int meta) {
-			return icon;
+		blockIcon = register.registerIcon(BlockInfo.TEXTURE_LOCATION + ":" + BlockInfo.PERMAICE_ORE_ICON);
 	}
 
     @Override
