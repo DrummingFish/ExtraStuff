@@ -8,9 +8,9 @@ import net.minecraft.entity.Entity;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 
-public class ItemMyArmor extends ItemArmor {
+public class ItemArmors extends ItemArmor {
 
-	public ItemMyArmor(ArmorMaterial armourMaterial, int par3, int par4) {
+	public ItemArmors(ArmorMaterial armourMaterial, int par3, int par4) {
 		super(armourMaterial, par3, par4);
 		this.setCreativeTab(ExtraStuffTab.EXTRASTUFF_TAB);
 	}

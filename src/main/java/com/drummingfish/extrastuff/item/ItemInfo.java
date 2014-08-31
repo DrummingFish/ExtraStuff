@@ -70,6 +70,26 @@ public class ItemInfo {
     public static final String MUMMY_BOOTS_NAME = "Mummy Shoes";
     public static final String MUMMY_BOOTS_ICON = "mummy_boots";
 
+    public static final String FLOWER_HELM_KEY = "flowerHelm";
+    public static final String FLOWER_HELM_UNLOCALIZED_NAME = "flowerHelm";
+    public static final String FLOWER_HELM_NAME = "Flower Headband";
+    public static final String FLOWER_HELM_ICON = "flower_helm";
+
+    public static final String FLOWER_BODY_KEY = "flowerBody";
+    public static final String FLOWER_BODY_UNLOCALIZED_NAME = "flowerBody";
+    public static final String FLOWER_BODY_NAME = "Flower Top";
+    public static final String FLOWER_BODY_ICON = "flower_body";
+
+    public static final String FLOWER_LEGS_KEY = "flowerLegs";
+    public static final String FLOWER_LEGS_UNLOCALIZED_NAME = "flowerLegs";
+    public static final String FLOWER_LEGS_NAME = "Flower Skirt";
+    public static final String FLOWER_LEGS_ICON = "flower_legs";
+
+    public static final String FLOWER_BOOTS_KEY = "flowerBoots";
+    public static final String FLOWER_BOOTS_UNLOCALIZED_NAME = "flowerBoots";
+    public static final String FLOWER_BOOTS_NAME = "Flower Sandals";
+    public static final String FLOWER_BOOTS_ICON = "flower_boots";
+
     public static final String PERMAICE_AXE_KEY = "permaIceAxe";
     public static final String PERMAICE_AXE_UNLOCALIZED_NAME = "permaIceAxe";
     public static final String PERMAICE_AXE_NAME = "Perma-Ice Axe";

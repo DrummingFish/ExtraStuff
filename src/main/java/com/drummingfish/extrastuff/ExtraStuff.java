@@ -48,6 +48,7 @@ public class ExtraStuff {
         proxy.initEntities();
 		proxy.initArmourRenderer("PERMAICE");
         proxy.initArmourRenderer("MUMMY");
+        proxy.initArmourRenderer("FLOWER");
 
         LogHelper.info("Pre-Initialization Complete!");
 	}

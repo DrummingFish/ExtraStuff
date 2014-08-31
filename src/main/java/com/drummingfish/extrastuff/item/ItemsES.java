@@ -1,6 +1,5 @@
 package com.drummingfish.extrastuff.item;
 
-import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
@@ -15,6 +14,8 @@ public class ItemsES {
     static ItemTool.ToolMaterial toolPERMAICE = EnumHelper.addToolMaterial("PERMAICE", 2, 500, 7F, 3, 9);
 
     static ItemArmor.ArmorMaterial armourMUMMY = EnumHelper.addArmorMaterial("MUMMY", 20, new int[]{1, 2, 2, 1}, 17);
+
+    static ItemArmor.ArmorMaterial armourFLOWER = EnumHelper.addArmorMaterial("FLOWER", 4, new int[]{0, 0, 0, 0}, 0);
 
     public static Item chainmail;
 
@@ -36,6 +37,11 @@ public class ItemsES {
     public static Item mummyLegs;
     public static Item mummyBoots;
 
+    public static Item flowerHelm;
+    public static Item flowerBody;
+    public static Item flowerLegs;
+    public static Item flowerBoots;
+
     public static Item permaIceAxe;
     public static Item permaIceHoe;
     public static Item permaIcePickaxe;
@@ -53,15 +59,20 @@ public class ItemsES {
 
         permaIceShard = new ItemPermaIceShard();
 
-        permaIceHelm = new ItemMyArmor(armourPERMAICE, 5, 0).setUnlocalizedName(ItemInfo.PERMAICE_HELM_UNLOCALIZED_NAME);
-        permaIceBody = new ItemMyArmor(armourPERMAICE, 5, 1).setUnlocalizedName(ItemInfo.PERMAICE_BODY_UNLOCALIZED_NAME);
-        permaIceLegs = new ItemMyArmor(armourPERMAICE, 5, 2).setUnlocalizedName(ItemInfo.PERMAICE_LEGS_UNLOCALIZED_NAME);
-        permaIceBoots = new ItemMyArmor(armourPERMAICE, 5, 3).setUnlocalizedName(ItemInfo.PERMAICE_BOOTS_UNLOCALIZED_NAME);
+        permaIceHelm = new ItemArmors(armourPERMAICE, 5, 0).setUnlocalizedName(ItemInfo.PERMAICE_HELM_UNLOCALIZED_NAME);
+        permaIceBody = new ItemArmors(armourPERMAICE, 5, 1).setUnlocalizedName(ItemInfo.PERMAICE_BODY_UNLOCALIZED_NAME);
+        permaIceLegs = new ItemArmors(armourPERMAICE, 5, 2).setUnlocalizedName(ItemInfo.PERMAICE_LEGS_UNLOCALIZED_NAME);
+        permaIceBoots = new ItemArmors(armourPERMAICE, 5, 3).setUnlocalizedName(ItemInfo.PERMAICE_BOOTS_UNLOCALIZED_NAME);
 
-        mummyHelm = new ItemMyArmor(armourMUMMY, 6, 0).setUnlocalizedName(ItemInfo.MUMMY_HELM_UNLOCALIZED_NAME);
-        mummyBody = new ItemMyArmor(armourMUMMY, 6, 1).setUnlocalizedName(ItemInfo.MUMMY_BODY_UNLOCALIZED_NAME);
-        mummyLegs = new ItemMyArmor(armourMUMMY, 6, 2).setUnlocalizedName(ItemInfo.MUMMY_LEGS_UNLOCALIZED_NAME);
-        mummyBoots = new ItemMyArmor(armourMUMMY, 6, 3).setUnlocalizedName(ItemInfo.MUMMY_BOOTS_UNLOCALIZED_NAME);
+        mummyHelm = new ItemArmors(armourMUMMY, 6, 0).setUnlocalizedName(ItemInfo.MUMMY_HELM_UNLOCALIZED_NAME);
+        mummyBody = new ItemArmors(armourMUMMY, 6, 1).setUnlocalizedName(ItemInfo.MUMMY_BODY_UNLOCALIZED_NAME);
+        mummyLegs = new ItemArmors(armourMUMMY, 6, 2).setUnlocalizedName(ItemInfo.MUMMY_LEGS_UNLOCALIZED_NAME);
+        mummyBoots = new ItemArmors(armourMUMMY, 6, 3).setUnlocalizedName(ItemInfo.MUMMY_BOOTS_UNLOCALIZED_NAME);
+
+        flowerHelm = new ItemArmors(armourFLOWER, 7, 0).setUnlocalizedName(ItemInfo.FLOWER_HELM_UNLOCALIZED_NAME);
+        flowerBody = new ItemArmors(armourFLOWER, 7, 1).setUnlocalizedName(ItemInfo.FLOWER_BODY_UNLOCALIZED_NAME);
+        flowerLegs = new ItemArmors(armourFLOWER, 7, 2).setUnlocalizedName(ItemInfo.FLOWER_LEGS_UNLOCALIZED_NAME);
+        flowerBoots = new ItemArmors(armourFLOWER, 7, 3).setUnlocalizedName(ItemInfo.FLOWER_BOOTS_UNLOCALIZED_NAME);
 
         permaIceAxe = new ItemPermaIceAxe(toolPERMAICE);
         permaIceHoe = new ItemPermaIceHoe(toolPERMAICE);
@@ -88,6 +99,11 @@ public class ItemsES {
         GameRegistry.registerItem(mummyBody, ItemInfo.MUMMY_BODY_KEY);
         GameRegistry.registerItem(mummyLegs, ItemInfo.MUMMY_LEGS_KEY);
         GameRegistry.registerItem(mummyBoots, ItemInfo.MUMMY_BOOTS_KEY);
+
+        GameRegistry.registerItem(flowerHelm, ItemInfo.FLOWER_HELM_KEY);
+        GameRegistry.registerItem(flowerBody, ItemInfo.FLOWER_BODY_KEY);
+        GameRegistry.registerItem(flowerLegs, ItemInfo.FLOWER_LEGS_KEY);
+        GameRegistry.registerItem(flowerBoots, ItemInfo.FLOWER_BOOTS_KEY);
 
         GameRegistry.registerItem(permaIceAxe, ItemInfo.PERMAICE_AXE_KEY);
         GameRegistry.registerItem(permaIceHoe, ItemInfo.PERMAICE_HOE_KEY);
