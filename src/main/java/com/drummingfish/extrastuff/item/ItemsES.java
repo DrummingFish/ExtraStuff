@@ -13,6 +13,7 @@ public class ItemsES {
     static ItemArmor.ArmorMaterial armourPERMAICE = EnumHelper.addArmorMaterial("PERMAICE", 20, new int[]{2, 7, 5, 3}, 11);
     static ItemArmor.ArmorMaterial armourMUMMY = EnumHelper.addArmorMaterial("MUMMY", 20, new int[]{1, 2, 2, 1}, 17);
     static ItemArmor.ArmorMaterial armourFLOWER = EnumHelper.addArmorMaterial("FLOWER", 4, new int[]{0, 0, 0, 0}, 0);
+    static ItemArmor.ArmorMaterial armourDIAMONDFLOWER = EnumHelper.addArmorMaterial("DIAMONDFLOWER", 25, new int[]{3, 7, 5, 3}, 12);
 
     static ItemTool.ToolMaterial toolPERMAICE = EnumHelper.addToolMaterial("PERMAICE", 2, 500, 7F, 3, 9);
 
@@ -40,6 +41,11 @@ public class ItemsES {
     public static Item flowerBody;
     public static Item flowerLegs;
     public static Item flowerBoots;
+
+    public static Item diamondFlowerHelm;
+    public static Item diamondFlowerBody;
+    public static Item diamondFlowerLegs;
+    public static Item diamondFlowerBoots;
 
     public static Item permaIceAxe;
     public static Item permaIceHoe;
@@ -73,6 +79,11 @@ public class ItemsES {
         flowerLegs = new ItemArmors(armourFLOWER, 7, 2).setUnlocalizedName(ItemInfo.FLOWER_LEGS_UNLOCALIZED_NAME);
         flowerBoots = new ItemArmors(armourFLOWER, 7, 3).setUnlocalizedName(ItemInfo.FLOWER_BOOTS_UNLOCALIZED_NAME);
 
+        diamondFlowerHelm = new ItemArmors(armourDIAMONDFLOWER, 8, 0).setUnlocalizedName(ItemInfo.DIAMOND_FLOWER_HELM_UNLOCALIZED_NAME);
+        diamondFlowerBody = new ItemArmors(armourDIAMONDFLOWER, 8, 1).setUnlocalizedName(ItemInfo.DIAMOND_FLOWER_BODY_UNLOCALIZED_NAME);
+        diamondFlowerLegs = new ItemArmors(armourDIAMONDFLOWER, 8, 2).setUnlocalizedName(ItemInfo.DIAMOND_FLOWER_LEGS_UNLOCALIZED_NAME);
+        diamondFlowerBoots = new ItemArmors(armourDIAMONDFLOWER, 8, 3).setUnlocalizedName(ItemInfo.DIAMOND_FLOWER_BOOTS_UNLOCALIZED_NAME);
+
         permaIceAxe = new ItemPermaIceAxe(toolPERMAICE);
         permaIceHoe = new ItemPermaIceHoe(toolPERMAICE);
         permaIcePickaxe = new ItemPermaIcePickaxe(toolPERMAICE);
@@ -103,6 +114,11 @@ public class ItemsES {
         GameRegistry.registerItem(flowerBody, ItemInfo.FLOWER_BODY_KEY);
         GameRegistry.registerItem(flowerLegs, ItemInfo.FLOWER_LEGS_KEY);
         GameRegistry.registerItem(flowerBoots, ItemInfo.FLOWER_BOOTS_KEY);
+
+        GameRegistry.registerItem(diamondFlowerHelm, ItemInfo.DIAMOND_FLOWER_HELM_KEY);
+        GameRegistry.registerItem(diamondFlowerBody, ItemInfo.DIAMOND_FLOWER_BODY_KEY);
+        GameRegistry.registerItem(diamondFlowerLegs, ItemInfo.DIAMOND_FLOWER_LEGS_KEY);
+        GameRegistry.registerItem(diamondFlowerBoots, ItemInfo.DIAMOND_FLOWER_BOOTS_KEY);
 
         GameRegistry.registerItem(permaIceAxe, ItemInfo.PERMAICE_AXE_KEY);
         GameRegistry.registerItem(permaIceHoe, ItemInfo.PERMAICE_HOE_KEY);

@@ -2,7 +2,6 @@ package com.drummingfish.extrastuff.item;
 
 public class ItemInfo {
 
-	// Name of folder inside assets
 	public static final String TEXTURE_LOCATION = "extrastuff";
 
 	public static final String CHAINMAIL_KEY = "chainmail";
@@ -72,6 +71,22 @@ public class ItemInfo {
     public static final String FLOWER_BOOTS_KEY = "flowerBoots";
     public static final String FLOWER_BOOTS_UNLOCALIZED_NAME = "flowerBoots";
     public static final String FLOWER_BOOTS_ICON = "flower_boots";
+
+    public static final String DIAMOND_FLOWER_HELM_KEY = "diamondFlowerHelm";
+    public static final String DIAMOND_FLOWER_HELM_UNLOCALIZED_NAME = "diamondFlowerHelm";
+    public static final String DIAMOND_FLOWER_HELM_ICON = "diamond_flower_helm";
+
+    public static final String DIAMOND_FLOWER_BODY_KEY = "diamondFlowerBody";
+    public static final String DIAMOND_FLOWER_BODY_UNLOCALIZED_NAME = "diamondFlowerBody";
+    public static final String DIAMOND_FLOWER_BODY_ICON = "diamond_flower_body";
+
+    public static final String DIAMOND_FLOWER_LEGS_KEY = "diamondFlowerLegs";
+    public static final String DIAMOND_FLOWER_LEGS_UNLOCALIZED_NAME = "diamondFlowerLegs";
+    public static final String DIAMOND_FLOWER_LEGS_ICON = "diamond_flower_legs";
+
+    public static final String DIAMOND_FLOWER_BOOTS_KEY = "diamondFlowerBoots";
+    public static final String DIAMOND_FLOWER_BOOTS_UNLOCALIZED_NAME = "diamondFlowerBoots";
+    public static final String DIAMOND_FLOWER_BOOTS_ICON = "diamond_flower_boots";
 
     public static final String PERMAICE_AXE_KEY = "permaIceAxe";
     public static final String PERMAICE_AXE_UNLOCALIZED_NAME = "permaIceAxe";
