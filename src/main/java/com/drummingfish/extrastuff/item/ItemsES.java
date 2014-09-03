@@ -56,10 +56,14 @@ public class ItemsES {
 
     public static Item permaIceBall;
 
-    public static void init() {
-		chainmail = new ItemChainmail();
+    public static Item encrustedFlower;
 
-		ironNugget = new ItemIronNugget();
+    public static Item reinforcedString;
+
+    public static void init() {
+		chainmail = new ItemBasic().setUnlocalizedName(ItemInfo.CHAINMAIL_UNLOCALIZED_NAME);
+
+		ironNugget = new ItemBasic().setUnlocalizedName(ItemInfo.IRON_NUGGET_UNLOCALIZED_NAME);
 
         ducttape = new ItemDuctTape(null);
 
@@ -92,6 +96,10 @@ public class ItemsES {
         permaIceSword = new ItemPermaIceSword(toolPERMAICE);
 
         permaIceBall = new ItemPermaIceBall();
+
+        encrustedFlower = new ItemBasic().setUnlocalizedName(ItemInfo.ENCRUSTED_FLOWER_UNLOCALIZED_NAME);
+
+        reinforcedString = new ItemBasic().setUnlocalizedName(ItemInfo.REINFORCED_STRING_UNLOCALIZED_NAME);
 
         GameRegistry.registerItem(chainmail, ItemInfo.CHAINMAIL_KEY);
 
@@ -128,6 +136,10 @@ public class ItemsES {
         GameRegistry.registerItem(permaIceSword, ItemInfo.PERMAICE_SWORD_KEY);
 
         GameRegistry.registerItem(permaIceBall, ItemInfo.PERMAICE_BALL_KEY);
+
+        GameRegistry.registerItem(encrustedFlower, ItemInfo.ENCRUSTED_FLOWER_KEY);
+
+        GameRegistry.registerItem(reinforcedString, ItemInfo.REINFORCED_STRING_KEY);
     }
 	
 	public static void oreRegistration() {

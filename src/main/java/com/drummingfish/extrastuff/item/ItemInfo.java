@@ -111,4 +111,12 @@ public class ItemInfo {
     public static final String PERMAICE_BALL_KEY = "permaIceBall";
     public static final String PERMAICE_BALL_UNLOCALIZED_NAME = "permaIceBall";
     public static final String PERMAICE_BALL_ICON = "permaice_ball";
+
+    public static final String ENCRUSTED_FLOWER_KEY = "encrustedFlower";
+    public static final String ENCRUSTED_FLOWER_UNLOCALIZED_NAME = "encrustedFlower";
+    public static final String ENCRUSTED_FLOWER_ICON = "encrusted_flower";
+
+    public static final String REINFORCED_STRING_KEY = "reinforcedString";
+    public static final String REINFORCED_STRING_UNLOCALIZED_NAME = "reinforcedString";
+    public static final String REINFORCED_STRING_ICON = "reinforced_string";
 }

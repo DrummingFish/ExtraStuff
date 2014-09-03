@@ -121,6 +121,20 @@ public class Recipes {
 				new Object[] { Items.emerald, Blocks.lever
 							 });
 
+        // Mummy Outfit
+        GameRegistry.addRecipe(new ItemStack(ItemsES.mummyHelm),
+                new Object[] { "XXX", "X X", 'X', ItemsES.toiletRoll,
+                });
+        GameRegistry.addRecipe(new ItemStack(ItemsES.mummyBody),
+                new Object[] { "X X", "XXX", "XXX", 'X', ItemsES.toiletRoll,
+                });
+        GameRegistry.addRecipe(new ItemStack(ItemsES.mummyLegs),
+                new Object[] { "XXX", "X X", "X X", 'X', ItemsES.toiletRoll,
+                });
+        GameRegistry.addRecipe(new ItemStack(ItemsES.mummyBoots),
+                new Object[] { "X X", "X X", 'X', ItemsES.toiletRoll,
+                });
+
         // Perma-Ice Armour
         GameRegistry.addRecipe(new ItemStack(ItemsES.permaIceHelm),
                 new Object[] { "XXX", "X X", 'X', ItemsES.permaIceShard,
@@ -165,7 +179,20 @@ public class Recipes {
         GameRegistry.addRecipe(new ShapedOreRecipe(ItemsES.flowerBoots,
                 new Object[] { "XYX", "ZYZ", 'X', "flower", 'Y', Items.string, 'Z', Items.leather
                 }));
+
         // Encrusted Floral Armour
+        GameRegistry.addRecipe(new ShapedOreRecipe(ItemsES.diamondFlowerHelm,
+                new Object[] { "XXX", "YYY", 'X', ItemsES.encrustedFlower, 'Y', ItemsES.reinforcedString
+                }));
+        GameRegistry.addRecipe(new ShapedOreRecipe(ItemsES.diamondFlowerBody,
+                new Object[] { "XYX", "YXY", "XYX", 'X', ItemsES.encrustedFlower, 'Y', ItemsES.reinforcedString
+                }));
+        GameRegistry.addRecipe(new ShapedOreRecipe(ItemsES.diamondFlowerLegs,
+                new Object[] { "XXX", "XYX", "Y Y", 'X', ItemsES.encrustedFlower, 'Y', ItemsES.reinforcedString
+                }));
+        GameRegistry.addRecipe(new ShapedOreRecipe(ItemsES.diamondFlowerBoots,
+                new Object[] { "XYX", "ZYZ", 'X', "flower", 'Y', ItemsES.encrustedFlower, 'Z', ItemsES.reinforcedString
+                }));
 
         // Duct Tape
         GameRegistry.addRecipe(new ItemStack(ItemsES.ducttape),
@@ -173,9 +200,21 @@ public class Recipes {
                 });
 
         // Toilet Roll
+        GameRegistry.addRecipe(new ShapedOreRecipe(ItemsES.toiletRoll,
+                new Object[] { "XXX", "XYX", "XXX", 'X', Items.paper, 'Y', "stickWood"
+                }));
 
         // Perma-Ice Block <-> 9 Perma-Ice Shard
+        GameRegistry.addShapelessRecipe(new ItemStack(ItemsES.permaIceShard, 9),
+                new Object[] { BlocksES.blockPermaIce
+                });
+        GameRegistry.addRecipe(new ItemStack(ItemsES.permaIceShard),
+                new Object[]{"XXX", "XXX", "XXX", 'X', BlocksES.blockPermaIce
+                });
 
-        //
+        // Perma-Ice Ball
+        GameRegistry.addRecipe(new ItemStack(ItemsES.permaIceBall),
+                new Object[] { "XX ", "XX ", 'X', ItemsES.permaIceShard
+                });
 	}
 }
