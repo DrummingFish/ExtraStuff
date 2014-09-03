@@ -1,6 +1,7 @@
 package com.drummingfish.extrastuff.item;
 
 import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
@@ -131,5 +132,6 @@ public class ItemsES {
 	
 	public static void oreRegistration() {
 		OreDictionary.registerOre("nuggetIron", new ItemStack(ItemsES.ironNugget));
-	}
+        OreDictionary.registerOre("stickWood", new ItemStack(Items.stick));
+    }
 }

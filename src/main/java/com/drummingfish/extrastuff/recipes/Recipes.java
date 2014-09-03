@@ -120,5 +120,62 @@ public class Recipes {
 		GameRegistry.addShapelessRecipe(new ItemStack(BlocksES.leverEmerald),
 				new Object[] { Items.emerald, Blocks.lever
 							 });
+
+        // Perma-Ice Armour
+        GameRegistry.addRecipe(new ItemStack(ItemsES.permaIceHelm),
+                new Object[] { "XXX", "X X", 'X', ItemsES.permaIceShard,
+                });
+        GameRegistry.addRecipe(new ItemStack(ItemsES.permaIceBody),
+                new Object[] { "X X", "XXX", "XXX", 'X', ItemsES.permaIceShard,
+                });
+        GameRegistry.addRecipe(new ItemStack(ItemsES.permaIceLegs),
+                new Object[] { "XXX", "X X", "X X", 'X', ItemsES.permaIceShard,
+                });
+        GameRegistry.addRecipe(new ItemStack(ItemsES.permaIceBoots),
+                new Object[] { "X X", "X X", 'X', ItemsES.permaIceShard,
+                });
+
+        // Perma-Ice Tools
+        GameRegistry.addRecipe(new ShapedOreRecipe(ItemsES.permaIceAxe,
+                new Object[] { "XX ", "XY ", " Y ", 'X', ItemsES.permaIceShard, 'Y', "stickWood"
+                }));
+        GameRegistry.addRecipe(new ShapedOreRecipe(ItemsES.permaIceHoe,
+                new Object[] { "XX ", " Y ", " Y ", 'X', ItemsES.permaIceShard, 'Y', "stickWood"
+                }));
+        GameRegistry.addRecipe(new ShapedOreRecipe(ItemsES.permaIcePickaxe,
+                new Object[] { "XXX", " Y ", " Y ", 'X', ItemsES.permaIceShard, 'Y', "stickWood"
+                }));
+        GameRegistry.addRecipe(new ShapedOreRecipe(ItemsES.permaIceShovel,
+                new Object[] { " X ", " Y ", " Y ", 'X', ItemsES.permaIceShard, 'Y', "stickWood"
+                }));
+        GameRegistry.addRecipe(new ShapedOreRecipe(ItemsES.permaIceSword,
+                new Object[] { " X ", " X ", " Y ", 'X', ItemsES.permaIceShard, 'Y', "stickWood"
+                }));
+
+        // Floral Armour
+        GameRegistry.addRecipe(new ShapedOreRecipe(ItemsES.flowerHelm,
+                new Object[] { "XXX", "YYY", 'X', "flower", 'Y', Items.string
+                }));
+        GameRegistry.addRecipe(new ShapedOreRecipe(ItemsES.flowerBody,
+                new Object[] { "XYX", "YXY", "XYX", 'X', "flower", 'Y', Items.string
+                }));
+        GameRegistry.addRecipe(new ShapedOreRecipe(ItemsES.flowerLegs,
+                new Object[] { "XXX", "XYX", "Y Y", 'X', "flower", 'Y', Items.string
+                }));
+        GameRegistry.addRecipe(new ShapedOreRecipe(ItemsES.flowerBoots,
+                new Object[] { "XYX", "ZYZ", 'X', "flower", 'Y', Items.string, 'Z', Items.leather
+                }));
+        // Encrusted Floral Armour
+
+        // Duct Tape
+        GameRegistry.addRecipe(new ItemStack(ItemsES.ducttape),
+                new Object[] { "XXX", "XYX", "XXX", 'X', Items.paper, 'Y', Items.slime_ball
+                });
+
+        // Toilet Roll
+
+        // Perma-Ice Block <-> 9 Perma-Ice Shard
+
+        //
 	}
 }

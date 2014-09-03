@@ -3,6 +3,9 @@ package com.drummingfish.extrastuff.block;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.init.Blocks;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.oredict.OreDictionary;
 
 public class BlocksES {
 	
@@ -71,4 +74,24 @@ public class BlocksES {
         blockPermaIce = new BlockPermaIce(Material.rock);
         GameRegistry.registerBlock(blockPermaIce, BlockInfo.PERMAICE_BLOCK_KEY);
 	}
+
+    public static void oreRegistration() {
+        OreDictionary.registerOre("flower", new ItemStack(Blocks.red_flower));
+        OreDictionary.registerOre("flower", new ItemStack(Blocks.red_flower, 1, 1));
+        OreDictionary.registerOre("flower", new ItemStack(Blocks.red_flower, 1, 2));
+        OreDictionary.registerOre("flower", new ItemStack(Blocks.red_flower, 1, 3));
+        OreDictionary.registerOre("flower", new ItemStack(Blocks.red_flower, 1, 4));
+        OreDictionary.registerOre("flower", new ItemStack(Blocks.red_flower, 1, 5));
+        OreDictionary.registerOre("flower", new ItemStack(Blocks.red_flower, 1, 6));
+        OreDictionary.registerOre("flower", new ItemStack(Blocks.red_flower, 1, 7));
+        OreDictionary.registerOre("flower", new ItemStack(Blocks.red_flower, 1, 8));
+        OreDictionary.registerOre("flower", new ItemStack(Blocks.red_flower, 1, 9));
+
+        OreDictionary.registerOre("flower", new ItemStack(Blocks.double_plant));
+        OreDictionary.registerOre("flower", new ItemStack(Blocks.double_plant, 1, 1));
+        OreDictionary.registerOre("flower", new ItemStack(Blocks.double_plant, 1, 4));
+        OreDictionary.registerOre("flower", new ItemStack(Blocks.double_plant, 1, 5));
+
+        OreDictionary.registerOre("flower", new ItemStack(Blocks.yellow_flower));
+    }
 }

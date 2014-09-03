@@ -54,7 +54,8 @@ public class ExtraStuff {
 	@EventHandler
 	public void load(FMLInitializationEvent event) {
 		ItemsES.oreRegistration();
-		
+		BlocksES.oreRegistration();
+
 		Recipes.registerRecipes();
 
         GameRegistry.registerWorldGenerator(new WorldGenOre(), 5);
