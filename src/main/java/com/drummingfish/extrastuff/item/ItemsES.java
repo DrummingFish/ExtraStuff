@@ -73,6 +73,8 @@ public class ItemsES {
 
         permaIceShard = new ItemPermaIceShard();
 
+        toiletRoll = new ItemToiletRoll();
+
         permaIceHelm = new ItemArmors(armourPERMAICE, 5, 0).setUnlocalizedName(ItemInfo.PERMAICE_HELM_UNLOCALIZED_NAME);
         permaIceBody = new ItemArmors(armourPERMAICE, 5, 1).setUnlocalizedName(ItemInfo.PERMAICE_BODY_UNLOCALIZED_NAME);
         permaIceLegs = new ItemArmors(armourPERMAICE, 5, 2).setUnlocalizedName(ItemInfo.PERMAICE_LEGS_UNLOCALIZED_NAME);
@@ -117,6 +119,8 @@ public class ItemsES {
 
         GameRegistry.registerItem(permaIceShard, ItemInfo.PERMAICE_SHARD_KEY);
 
+        GameRegistry.registerItem(toiletRoll, ItemInfo.TOILET_ROLL_KEY);
+
         GameRegistry.registerItem(permaIceHelm, ItemInfo.PERMAICE_HELM_KEY);
         GameRegistry.registerItem(permaIceBody, ItemInfo.PERMAICE_BODY_KEY);
         GameRegistry.registerItem(permaIceLegs, ItemInfo.PERMAICE_LEGS_KEY);
@@ -157,5 +161,6 @@ public class ItemsES {
 	public static void oreRegistration() {
 		OreDictionary.registerOre("nuggetIron", new ItemStack(ItemsES.ironNugget));
         OreDictionary.registerOre("stickWood", new ItemStack(Items.stick));
+        OreDictionary.registerOre("bucketWater", new ItemStack(Items.water_bucket));
     }
 }

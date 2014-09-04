@@ -138,7 +138,7 @@ public class Recipes {
 
         // Perma-Ice Armour
         GameRegistry.addRecipe(new ItemStack(ItemsES.permaIceHelm),
-                new Object[] { "XXX", "X X", "   ", 'X', ItemsES.permaIceShard
+                new Object[] { "XXX", "X X", 'X', ItemsES.permaIceShard
                 });
         GameRegistry.addRecipe(new ItemStack(ItemsES.permaIceBody),
                 new Object[] { "X X", "XXX", "XXX", 'X', ItemsES.permaIceShard
@@ -147,7 +147,7 @@ public class Recipes {
                 new Object[] { "XXX", "X X", "X X", 'X', ItemsES.permaIceShard
                 });
         GameRegistry.addRecipe(new ItemStack(ItemsES.permaIceBoots),
-                new Object[] { "X X", "X X", "   ", 'X', ItemsES.permaIceShard
+                new Object[] { "X X", "X X", 'X', ItemsES.permaIceShard
                 });
 
         // Perma-Ice Tools
@@ -169,7 +169,7 @@ public class Recipes {
 
         // Floral Armour
         GameRegistry.addRecipe(new ShapedOreRecipe(ItemsES.flowerHelm,
-                new Object[] { "XXX", "YYY", "   ", 'X', "flower", 'Y', Items.string
+                new Object[] { "XXX", "YYY", 'X', "flower", 'Y', Items.string
                 }));
         GameRegistry.addRecipe(new ShapedOreRecipe(ItemsES.flowerBody,
                 new Object[] { "XYX", "YXY", "XYX", 'X', "flower", 'Y', Items.string
@@ -178,12 +178,12 @@ public class Recipes {
                 new Object[] { "XXX", "XYX", "Y Y", 'X', "flower", 'Y', Items.string
                 }));
         GameRegistry.addRecipe(new ShapedOreRecipe(ItemsES.flowerBoots,
-                new Object[] { "XYX", "ZYZ", "   ", 'X', "flower", 'Y', Items.string, 'Z', Items.leather
+                new Object[] { "XYX", "ZYZ", 'X', "flower", 'Y', Items.string, 'Z', Items.leather
                 }));
 
         // Encrusted Floral Armour
         GameRegistry.addRecipe(new ShapedOreRecipe(ItemsES.diamondFlowerHelm,
-                new Object[] { "XXX", "YYY", "   ", 'X', ItemsES.encrustedFlower, 'Y', ItemsES.reinforcedString
+                new Object[] { "XXX", "YYY", 'X', ItemsES.encrustedFlower, 'Y', ItemsES.reinforcedString
                 }));
         GameRegistry.addRecipe(new ShapedOreRecipe(ItemsES.diamondFlowerBody,
                 new Object[] { "XYX", "YXY", "XYX", 'X', ItemsES.encrustedFlower, 'Y', ItemsES.reinforcedString
@@ -192,7 +192,7 @@ public class Recipes {
                 new Object[] { "XXX", "XYX", "Y Y", 'X', ItemsES.encrustedFlower, 'Y', ItemsES.reinforcedString
                 }));
         GameRegistry.addRecipe(new ShapedOreRecipe(ItemsES.diamondFlowerBoots,
-                new Object[] { "XYX", "ZYZ", "   ", 'X', ItemsES.encrustedFlower, 'Y', ItemsES.reinforcedString, 'Z', ItemsES.hardenedLeather
+                new Object[] { "XYX", "ZYZ", 'X', ItemsES.encrustedFlower, 'Y', ItemsES.reinforcedString, 'Z', ItemsES.hardenedLeather
                 }));
 
         // Duct Tape
@@ -219,13 +219,13 @@ public class Recipes {
                 });
 
         // Encrusted Flower
-        GameRegistry.addShapelessRecipe(new ItemStack(ItemsES.encrustedFlower),
+        GameRegistry.addRecipe(new ShapelessOreRecipe(ItemsES.encrustedFlower,
                 new Object[]{"flower", Items.diamond
-                });
+                }));
 
         // Reinforced String
         GameRegistry.addShapelessRecipe(new ItemStack(ItemsES.reinforcedString),
-                new Object[]{Items.string, 3
+                new Object[]{Items.string, Items.string, Items.string
                 });
 
         // Hardened Leather
