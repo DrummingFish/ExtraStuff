@@ -60,6 +60,10 @@ public class ItemsES {
 
     public static Item reinforcedString;
 
+    public static Item hardenedLeather;
+
+    public static Item waterSoakedLeather;
+
     public static void init() {
 		chainmail = new ItemBasic().setUnlocalizedName(ItemInfo.CHAINMAIL_UNLOCALIZED_NAME);
 
@@ -101,6 +105,10 @@ public class ItemsES {
 
         reinforcedString = new ItemBasic().setUnlocalizedName(ItemInfo.REINFORCED_STRING_UNLOCALIZED_NAME);
 
+        hardenedLeather = new ItemBasic().setUnlocalizedName(ItemInfo.HARDENED_LEATHER_UNLOCALIZED_NAME);
+
+        waterSoakedLeather = new ItemBasic().setUnlocalizedName(ItemInfo.WATER_SOAKED_LEATHER_UNLOCALIZED_NAME);
+
         GameRegistry.registerItem(chainmail, ItemInfo.CHAINMAIL_KEY);
 
         GameRegistry.registerItem(ironNugget, ItemInfo.IRON_NUGGET_KEY);
@@ -140,6 +148,10 @@ public class ItemsES {
         GameRegistry.registerItem(encrustedFlower, ItemInfo.ENCRUSTED_FLOWER_KEY);
 
         GameRegistry.registerItem(reinforcedString, ItemInfo.REINFORCED_STRING_KEY);
+
+        GameRegistry.registerItem(hardenedLeather, ItemInfo.HARDENED_LEATHER_KEY);
+
+        GameRegistry.registerItem(waterSoakedLeather, ItemInfo.WATER_SOAKED_LEATHER_KEY);
     }
 	
 	public static void oreRegistration() {

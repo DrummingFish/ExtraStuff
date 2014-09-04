@@ -119,4 +119,12 @@ public class ItemInfo {
     public static final String REINFORCED_STRING_KEY = "reinforcedString";
     public static final String REINFORCED_STRING_UNLOCALIZED_NAME = "reinforcedString";
     public static final String REINFORCED_STRING_ICON = "reinforced_string";
+
+    public static final String HARDENED_LEATHER_KEY = "hardenedLeather";
+    public static final String HARDENED_LEATHER_UNLOCALIZED_NAME = "hardenedLeather";
+    public static final String HARDENED_LEATHER_ICON = "hardened_leather";
+
+    public static final String WATER_SOAKED_LEATHER_KEY = "waterSoakedLeather";
+    public static final String WATER_SOAKED_LEATHER_UNLOCALIZED_NAME = "waterSoakedLeather";
+    public static final String WATER_SOAKED_LEATHER_ICON = "water_soaked_leather";
 }

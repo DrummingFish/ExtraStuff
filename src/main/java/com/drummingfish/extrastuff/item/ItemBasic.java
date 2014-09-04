@@ -24,6 +24,10 @@ public class ItemBasic extends Item {
             itemIcon = register.registerIcon(ItemInfo.TEXTURE_LOCATION + ":" + ItemInfo.REINFORCED_STRING_ICON);
         } else if (this == ItemsES.chainmail) {
             itemIcon = register.registerIcon(ItemInfo.TEXTURE_LOCATION + ":" + ItemInfo.CHAINMAIL_ICON);
+        } else if (this == ItemsES.hardenedLeather) {
+            itemIcon = register.registerIcon(ItemInfo.TEXTURE_LOCATION + ":" + ItemInfo.HARDENED_LEATHER_ICON);
+        } else if (this == ItemsES.waterSoakedLeather) {
+            itemIcon = register.registerIcon(ItemInfo.TEXTURE_LOCATION + ":" + ItemInfo.WATER_SOAKED_LEATHER_ICON);
         }
     }
 }
