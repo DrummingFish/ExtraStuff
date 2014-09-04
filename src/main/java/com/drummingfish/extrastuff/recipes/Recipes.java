@@ -18,8 +18,13 @@ public class Recipes {
 
 		ItemStack stoneBrickStack = new ItemStack(Blocks.stonebrick, 1, 0);
 		ItemStack cobbleWallStack = new ItemStack(Blocks.cobblestone_wall, 1, 0);
-		
-		//if (OreDictionary.getOres("plateSteel").size() != 0) {
+
+        ItemStack stringStack = new ItemStack(Items.string);
+        ItemStack leatherStack = new ItemStack(Items.leather);
+        ItemStack permaIceShardStack = new ItemStack(ItemsES.permaIceShard);
+        ItemStack toiletRollStack = new ItemStack(ItemsES.toiletRoll);
+
+        //if (OreDictionary.getOres("plateSteel").size() != 0) {
 		//	  System.out.println("plateSteel OreDictionary value detected");
 		//} else {
 		//	  System.out.println("Cannot load plateSteel");
@@ -33,17 +38,13 @@ public class Recipes {
 					new Object[] { "X X", " X ", "X X", 'X', "nuggetIron"
 								 }));
 			GameRegistry.addRecipe(new ItemStack(Items.chainmail_helmet),
-					new Object[] { "XXX", "X X", 'X', ItemsES.chainmail
-								 });
+					"XXX", "X X", 'X', ItemsES.chainmail);
 			GameRegistry.addRecipe(new ItemStack(Items.chainmail_chestplate),
-					new Object[] { "X X", "XXX", "XXX", 'X', ItemsES.chainmail
-								 });
+					"X X", "XXX", "XXX", 'X', ItemsES.chainmail);
 			GameRegistry.addRecipe(new ItemStack(Items.chainmail_leggings),
-					new Object[] { "XXX", "X X", "X X", 'X', ItemsES.chainmail
-								 });
+					"XXX", "X X", "X X", 'X', ItemsES.chainmail);
 			GameRegistry.addRecipe(new ItemStack(Items.chainmail_boots),
-					new Object[] { "X X", "X X", 'X', ItemsES.chainmail
-								 });
+					"X X", "X X", 'X', ItemsES.chainmail);
 		}
 		
 		// Mossy Blocks
@@ -51,187 +52,140 @@ public class Recipes {
 			return;
 		} else {
 			GameRegistry.addRecipe(new ItemStack(Blocks.mossy_cobblestone),
-					new Object[] { "XXX", "XYX", "XXX", 'X', Blocks.vine, 'Y', Blocks.cobblestone
-								 });
+					"XXX", "XYX", "XXX", 'X', Blocks.vine, 'Y', Blocks.cobblestone);
 			GameRegistry.addRecipe(new ItemStack(Blocks.stonebrick, 1, 1),
-					new Object[] { "XXX", "XYX", "XXX", 'X', Blocks.vine, 'Y', stoneBrickStack
-								 });
+					"XXX", "XYX", "XXX", 'X', Blocks.vine, 'Y', stoneBrickStack);
 		}
 		GameRegistry.addRecipe(new ItemStack(Blocks.cobblestone_wall, 1, 1),
-				new Object[] { "XXX", "XYX", "XXX", 'X', Blocks.vine, 'Y', cobbleWallStack
-							 });
+		        "XXX", "XYX", "XXX", 'X', Blocks.vine, 'Y', cobbleWallStack);
 		
 		// Iron Trapdoor
 		GameRegistry.addRecipe(new ItemStack(BlocksES.trapDoorIron),
-				new Object[] { " X ", "XYX", " X ", 'X', Items.iron_ingot, 'Y', Blocks.trapdoor
-							 });
+				" X ", "XYX", " X ", 'X', Items.iron_ingot, 'Y', Blocks.trapdoor);
 		
 		// Saddle
 		if (Loader.isModLoaded("DartCraft")) {
 			return;
 		} else {
 			GameRegistry.addRecipe(new ItemStack(Items.saddle),
-					new Object[] { "XXX", "XZ ", " Y ", 'X', Items.leather, 'Y', Items.iron_ingot, 'Z', Items.string
-								 });
+					"XXX", "XZ ", " Y ", 'X', leatherStack, 'Y', Items.iron_ingot, 'Z', stringStack);
 		}
 		
 		// Horse Armour
 		GameRegistry.addRecipe(new ItemStack(Items.iron_horse_armor),
-				new Object[] { "  X", "XYX", "X X", 'X', Items.iron_ingot, 'Y', Blocks.wool
-							 });
+				"  X", "XYX", "X X", 'X', Items.iron_ingot, 'Y', Blocks.wool);
 		GameRegistry.addRecipe(new ItemStack(Items.golden_horse_armor),
-				new Object[] { "  X", "XYX", "X X", 'X', Items.gold_ingot, 'Y', Blocks.wool
-							 });
+				"  X", "XYX", "X X", 'X', Items.gold_ingot, 'Y', Blocks.wool);
 		GameRegistry.addRecipe(new ItemStack(Items.diamond_horse_armor),
-				new Object[] { "  X", "XYX", "X X", 'X', Items.diamond, 'Y', Blocks.wool
-							 });
+				"  X", "XYX", "X X", 'X', Items.diamond, 'Y', Blocks.wool);
 		
 		// 9 Iron Nugget <-> Iron
 		GameRegistry.addShapelessRecipe(new ItemStack(ItemsES.ironNugget, 9),
-				new Object[] { Items.iron_ingot
-							 });
+				Items.iron_ingot);
 		GameRegistry.addRecipe(new ShapedOreRecipe(Items.iron_ingot,
-				new Object[] { "XXX", "XXX", "XXX", 'X', "nuggetIron"
-							 }));
+				"XXX", "XXX", "XXX", 'X', "nuggetIron"));
 		
 		// Buttons
 		GameRegistry.addShapelessRecipe(new ItemStack(BlocksES.buttonIron),
-				new Object[] { Items.iron_ingot, Blocks.stone_button
-							 });
+				Items.iron_ingot, Blocks.stone_button);
 		GameRegistry.addShapelessRecipe(new ItemStack(BlocksES.buttonGold),
-				new Object[] { Items.gold_ingot, Blocks.stone_button
-							 });
+				Items.gold_ingot, Blocks.stone_button);
 		GameRegistry.addShapelessRecipe(new ItemStack(BlocksES.buttonDiamond),
-				new Object[] { Items.diamond, Blocks.stone_button
-							 });
+				Items.diamond, Blocks.stone_button);
 		GameRegistry.addShapelessRecipe(new ItemStack(BlocksES.buttonEmerald),
-				new Object[] { Items.emerald, Blocks.stone_button
-							 });
+				Items.emerald, Blocks.stone_button);
 		
 		// Levers
 		GameRegistry.addShapelessRecipe(new ItemStack(BlocksES.leverIron),
-				new Object[] { Items.iron_ingot, Blocks.lever
-							 });
+				Items.iron_ingot, Blocks.lever);
 		GameRegistry.addShapelessRecipe(new ItemStack(BlocksES.leverGold),
-				new Object[] { Items.gold_ingot, Blocks.lever
-							 });
+				Items.gold_ingot, Blocks.lever);
 		GameRegistry.addShapelessRecipe(new ItemStack(BlocksES.leverDiamond),
-				new Object[] { Items.diamond, Blocks.lever
-							 });
+				Items.diamond, Blocks.lever);
 		GameRegistry.addShapelessRecipe(new ItemStack(BlocksES.leverEmerald),
-				new Object[] { Items.emerald, Blocks.lever
-							 });
+				Items.emerald, Blocks.lever);
 
         // Mummy Outfit
         GameRegistry.addRecipe(new ItemStack(ItemsES.mummyHelm),
-                new Object[] { "XXX", "X X", 'X', ItemsES.toiletRoll
-                });
+                "XXX", "X X", 'X', toiletRollStack);
         GameRegistry.addRecipe(new ItemStack(ItemsES.mummyBody),
-                new Object[] { "X X", "XXX", "XXX", 'X', ItemsES.toiletRoll
-                });
+                "X X", "XXX", "XXX", 'X', toiletRollStack);
         GameRegistry.addRecipe(new ItemStack(ItemsES.mummyLegs),
-                new Object[] { "XXX", "X X", "X X", 'X', ItemsES.toiletRoll
-                });
+                "XXX", "X X", "X X", 'X', toiletRollStack);
         GameRegistry.addRecipe(new ItemStack(ItemsES.mummyBoots),
-                new Object[] { "X X", "X X", 'X', ItemsES.toiletRoll
-                });
+                "X X", "X X", 'X', toiletRollStack);
 
         // Perma-Ice Armour
         GameRegistry.addRecipe(new ItemStack(ItemsES.permaIceHelm),
-                new Object[] { "XXX", "X X", 'X', ItemsES.permaIceShard
-                });
+                "XXX", "X X", 'X', permaIceShardStack);
         GameRegistry.addRecipe(new ItemStack(ItemsES.permaIceBody),
-                new Object[] { "X X", "XXX", "XXX", 'X', ItemsES.permaIceShard
-                });
+                "X X", "XXX", "XXX", 'X', permaIceShardStack);
         GameRegistry.addRecipe(new ItemStack(ItemsES.permaIceLegs),
-                new Object[] { "XXX", "X X", "X X", 'X', ItemsES.permaIceShard
-                });
+                "XXX", "X X", "X X", 'X', permaIceShardStack);
         GameRegistry.addRecipe(new ItemStack(ItemsES.permaIceBoots),
-                new Object[] { "X X", "X X", 'X', ItemsES.permaIceShard
-                });
+                "X X", "X X", 'X', permaIceShardStack);
 
         // Perma-Ice Tools
         GameRegistry.addRecipe(new ShapedOreRecipe(ItemsES.permaIceAxe,
-                new Object[] { "XX ", "XY ", " Y ", 'X', ItemsES.permaIceShard, 'Y', "stickWood"
-                }));
+                "XX ", "XY ", " Y ", 'X', permaIceShardStack, 'Y', "stickWood"));
         GameRegistry.addRecipe(new ShapedOreRecipe(ItemsES.permaIceHoe,
-                new Object[] { "XX ", " Y ", " Y ", 'X', ItemsES.permaIceShard, 'Y', "stickWood"
-                }));
+                "XX ", " Y ", " Y ", 'X', permaIceShardStack, 'Y', "stickWood"));
         GameRegistry.addRecipe(new ShapedOreRecipe(ItemsES.permaIcePickaxe,
-                new Object[] { "XXX", " Y ", " Y ", 'X', ItemsES.permaIceShard, 'Y', "stickWood"
-                }));
+                "XXX", " Y ", " Y ", 'X', permaIceShardStack, 'Y', "stickWood"));
         GameRegistry.addRecipe(new ShapedOreRecipe(ItemsES.permaIceShovel,
-                new Object[] { " X ", " Y ", " Y ", 'X', ItemsES.permaIceShard, 'Y', "stickWood"
-                }));
+                " X ", " Y ", " Y ", 'X', permaIceShardStack, 'Y', "stickWood"));
         GameRegistry.addRecipe(new ShapedOreRecipe(ItemsES.permaIceSword,
-                new Object[] { " X ", " X ", " Y ", 'X', ItemsES.permaIceShard, 'Y', "stickWood"
-                }));
+                " X ", " X ", " Y ", 'X', permaIceShardStack, 'Y', "stickWood"));
 
         // Floral Armour
         GameRegistry.addRecipe(new ShapedOreRecipe(ItemsES.flowerHelm,
-                new Object[] { "XXX", "YYY", 'X', "flower", 'Y', Items.string
-                }));
+                "XXX", "YYY", 'X', "flower", 'Y', stringStack));
         GameRegistry.addRecipe(new ShapedOreRecipe(ItemsES.flowerBody,
-                new Object[] { "XYX", "YXY", "XYX", 'X', "flower", 'Y', Items.string
-                }));
+                "XYX", "YXY", "XYX", 'X', "flower", 'Y', stringStack));
         GameRegistry.addRecipe(new ShapedOreRecipe(ItemsES.flowerLegs,
-                new Object[] { "XXX", "XYX", "Y Y", 'X', "flower", 'Y', Items.string
-                }));
+                "XXX", "XYX", "Y Y", 'X', "flower", 'Y', stringStack));
         GameRegistry.addRecipe(new ShapedOreRecipe(ItemsES.flowerBoots,
-                new Object[] { "XYX", "ZYZ", 'X', "flower", 'Y', Items.string, 'Z', Items.leather
-                }));
+                "XYX", "ZYZ", 'X', "flower", 'Y', stringStack, 'Z', leatherStack));
 
         // Encrusted Floral Armour
         GameRegistry.addRecipe(new ShapedOreRecipe(ItemsES.diamondFlowerHelm,
-                new Object[] { "XXX", "YYY", 'X', ItemsES.encrustedFlower, 'Y', ItemsES.reinforcedString
-                }));
+                "XXX", "YYY", 'X', ItemsES.encrustedFlower, 'Y', ItemsES.reinforcedString));
         GameRegistry.addRecipe(new ShapedOreRecipe(ItemsES.diamondFlowerBody,
-                new Object[] { "XYX", "YXY", "XYX", 'X', ItemsES.encrustedFlower, 'Y', ItemsES.reinforcedString
-                }));
+                "XYX", "YXY", "XYX", 'X', ItemsES.encrustedFlower, 'Y', ItemsES.reinforcedString));
         GameRegistry.addRecipe(new ShapedOreRecipe(ItemsES.diamondFlowerLegs,
-                new Object[] { "XXX", "XYX", "Y Y", 'X', ItemsES.encrustedFlower, 'Y', ItemsES.reinforcedString
-                }));
+                "XXX", "XYX", "Y Y", 'X', ItemsES.encrustedFlower, 'Y', ItemsES.reinforcedString));
         GameRegistry.addRecipe(new ShapedOreRecipe(ItemsES.diamondFlowerBoots,
-                new Object[] { "XYX", "ZYZ", 'X', ItemsES.encrustedFlower, 'Y', ItemsES.reinforcedString, 'Z', ItemsES.hardenedLeather
-                }));
+                "XYX", "ZYZ", 'X', ItemsES.encrustedFlower, 'Y', ItemsES.reinforcedString, 'Z', ItemsES.hardenedLeather));
 
         // Duct Tape
         GameRegistry.addRecipe(new ItemStack(ItemsES.ducttape),
-                new Object[] { "XXX", "XYX", "XXX", 'X', Items.paper, 'Y', Items.slime_ball
-                });
+                "XXX", "XYX", "XXX", 'X', Items.paper, 'Y', Items.slime_ball);
 
         // Toilet Roll
-        GameRegistry.addRecipe(new ShapedOreRecipe(ItemsES.toiletRoll,
-                new Object[] { "XXX", "XYX", "XXX", 'X', Items.paper, 'Y', "stickWood"
-                }));
+        GameRegistry.addRecipe(new ShapedOreRecipe(toiletRollStack,
+                "XXX", "XYX", "XXX", 'X', Items.paper, 'Y', "stickWood"));
 
         // Perma-Ice Block <-> 9 Perma-Ice Shard
-        GameRegistry.addShapelessRecipe(new ItemStack(ItemsES.permaIceShard, 9),
-                new Object[] { BlocksES.blockPermaIce
-                });
-        GameRegistry.addRecipe(new ItemStack(ItemsES.permaIceShard),
-                new Object[]{"XXX", "XXX", "XXX", 'X', BlocksES.blockPermaIce
-                });
+        GameRegistry.addShapelessRecipe(permaIceShardStack, 9,
+                BlocksES.blockPermaIce);
+        GameRegistry.addRecipe(permaIceShardStack,
+                "XXX", "XXX", "XXX", 'X', BlocksES.blockPermaIce);
 
         // Perma-Ice Ball
         GameRegistry.addRecipe(new ItemStack(ItemsES.permaIceBall),
-                new Object[] { "XX ", "XX ", 'X', ItemsES.permaIceShard
-                });
+                "XX ", "XX ", 'X', permaIceShardStack);
 
         // Encrusted Flower
         GameRegistry.addRecipe(new ShapelessOreRecipe(ItemsES.encrustedFlower,
-                new Object[]{"flower", Items.diamond
-                }));
+                "flower", Items.diamond));
 
         // Reinforced String
         GameRegistry.addShapelessRecipe(new ItemStack(ItemsES.reinforcedString),
-                new Object[]{Items.string, Items.string, Items.string
-                });
+                stringStack, stringStack, stringStack);
 
         // Hardened Leather
         GameRegistry.addRecipe(new ShapelessOreRecipe(ItemsES.waterSoakedLeather,
-                new Object[]{"bucketWater", Items.leather
-                }));
+                "bucketWater", leatherStack));
         GameRegistry.addSmelting(ItemsES.waterSoakedLeather, new ItemStack(ItemsES.hardenedLeather), 0f);
 	}
 }
