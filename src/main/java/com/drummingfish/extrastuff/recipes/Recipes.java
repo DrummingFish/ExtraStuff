@@ -157,6 +157,15 @@ public class Recipes {
         GameRegistry.addRecipe(new ShapedOreRecipe(ItemsES.diamondFlowerBoots,
                 "XYX", "ZYZ", 'X', ItemsES.encrustedFlower, 'Y', ItemsES.reinforcedString, 'Z', ItemsES.hardenedLeather));
 
+        GameRegistry.addRecipe(new ShapedOreRecipe(ItemsES.diamondFlowerHelm,
+                " Y ", "YXY", 'X', ItemsES.flowerHelm, 'Y', Items.diamond));
+        GameRegistry.addRecipe(new ShapedOreRecipe(ItemsES.diamondFlowerBody,
+                "YYY", " X ", "Y Y", 'X', ItemsES.flowerBody, 'Y', Items.diamond));
+        GameRegistry.addRecipe(new ShapedOreRecipe(ItemsES.diamondFlowerLegs,
+                "YYY", "YXY", 'X', ItemsES.flowerLegs, 'Y', Items.diamond));
+        GameRegistry.addRecipe(new ShapedOreRecipe(ItemsES.diamondFlowerBoots,
+                "YXY", 'X', ItemsES.flowerBoots, 'Y', Items.diamond));
+
         // Duct Tape
         GameRegistry.addRecipe(new ItemStack(ItemsES.ducttape),
                 "XXX", "XYX", "XXX", 'X', Items.paper, 'Y', Items.slime_ball);
