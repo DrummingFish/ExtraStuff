@@ -166,10 +166,10 @@ public class Recipes {
                 "XXX", "XYX", "XXX", 'X', Items.paper, 'Y', "stickWood"));
 
         // Perma-Ice Block <-> 9 Perma-Ice Shard
-        GameRegistry.addShapelessRecipe(permaIceShardStack, 9,
+        GameRegistry.addShapelessRecipe(new ItemStack(ItemsES.permaIceShard, 9),
                 BlocksES.blockPermaIce);
-        GameRegistry.addRecipe(permaIceShardStack,
-                "XXX", "XXX", "XXX", 'X', BlocksES.blockPermaIce);
+        GameRegistry.addRecipe(new ItemStack(BlocksES.blockPermaIce),
+                "XXX", "XXX", "XXX", 'X', permaIceShardStack);
 
         // Perma-Ice Ball
         GameRegistry.addRecipe(new ItemStack(ItemsES.permaIceBall),

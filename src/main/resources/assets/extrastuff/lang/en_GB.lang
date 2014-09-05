@@ -37,10 +37,22 @@ item.flowerBody.name=Flower Top
 item.flowerLegs.name=Flower Skirt
 item.flowerBoots.name=Flower Sandals
 
+item.diamondFlowerHelm.name=Encrusted Flower Headband
+item.diamondFlowerBody.name=Encrusted Flower Top
+item.diamondFlowerLegs.name=Encrusted Flower Skirt
+item.diamondFlowerBoots.name=Encrusted Flower Sandals
+
 item.permaIceAxe.name=Perma-Ice Axe
 item.permaIceHoe.name=Perma-Ice Hoe
 item.permaIcePickaxe.name=Perma-Ice Pickaxe
 item.permaIceShovel.name=Perma-Ice Shovel
 item.permaIceSword.name=Perma-Ice Sword
+
+item.encrustedFlower.name=Diamond-Encrusted Flower
+
+item.reinforcedString.name=Reinforced String
+
+item.waterSoakedLeather.name=Water-Soaked Leather
+item.hardenedLeather.name=Hardened Leather
 
 itemGroup.extrastuff=Extra Stuff
