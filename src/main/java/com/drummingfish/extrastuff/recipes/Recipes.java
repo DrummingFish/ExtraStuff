@@ -40,7 +40,6 @@ public class Recipes {
                 "XXX", "X X", "X X", 'X', ItemsES.chainmail);
         GameRegistry.addRecipe(new ItemStack(Items.chainmail_boots),
                 "X X", "X X", 'X', ItemsES.chainmail);
-
 		
 		// Mossy Blocks
         GameRegistry.addRecipe(new ItemStack(Blocks.mossy_cobblestone),
@@ -57,7 +56,6 @@ public class Recipes {
 		// Saddle
 		GameRegistry.addRecipe(new ItemStack(Items.saddle),
 				"XXX", "XZ ", " Y ", 'X', leatherStack, 'Y', Items.iron_ingot, 'Z', stringStack);
-		
 		
 		// Horse Armour
 		GameRegistry.addRecipe(new ItemStack(Items.iron_horse_armor),

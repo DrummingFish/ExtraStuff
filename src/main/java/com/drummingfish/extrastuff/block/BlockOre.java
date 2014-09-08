@@ -21,6 +21,7 @@ public class BlockOre extends Block {
         this.setCreativeTab(ExtraStuffTab.EXTRASTUFF_TAB);
         if (type == "permaIceOre") {
             setBlockName(BlockInfo.PERMAICE_ORE_UNLOCALIZED_NAME);
+            setHardness(4.0F);
         } else {
             setBlockName("Unknown Ore!");
         }
@@ -41,7 +42,7 @@ public class BlockOre extends Block {
     @Override
     public int quantityDropped(Random par1Random)
     {
-        return 1 + par1Random.nextInt(1);
+        return (int)(Math.random() * 2 + 1);
     }
 
     @Override
