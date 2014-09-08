@@ -2,7 +2,6 @@ package com.drummingfish.extrastuff.recipes;
 
 import com.drummingfish.extrastuff.block.BlocksES;
 import com.drummingfish.extrastuff.item.ItemsES;
-import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
@@ -31,31 +30,23 @@ public class Recipes {
 		//}
 		
 		// Chainmail recipes
-		if (Loader.isModLoaded("gregtech_addon")) {
-			return;
-		} else {
-			GameRegistry.addRecipe(new ShapedOreRecipe(ItemsES.chainmail, true,
-					new Object[] { "X X", " X ", "X X", 'X', "nuggetIron"
-								 }));
-			GameRegistry.addRecipe(new ItemStack(Items.chainmail_helmet),
-					"XXX", "X X", 'X', ItemsES.chainmail);
-			GameRegistry.addRecipe(new ItemStack(Items.chainmail_chestplate),
-					"X X", "XXX", "XXX", 'X', ItemsES.chainmail);
-			GameRegistry.addRecipe(new ItemStack(Items.chainmail_leggings),
-					"XXX", "X X", "X X", 'X', ItemsES.chainmail);
-			GameRegistry.addRecipe(new ItemStack(Items.chainmail_boots),
-					"X X", "X X", 'X', ItemsES.chainmail);
-		}
+        GameRegistry.addRecipe(new ShapedOreRecipe(ItemsES.chainmail, true,
+                "X X", " X ", "X X", 'X', "nuggetIron"));
+        GameRegistry.addRecipe(new ItemStack(Items.chainmail_helmet),
+                "XXX", "X X", 'X', ItemsES.chainmail);
+        GameRegistry.addRecipe(new ItemStack(Items.chainmail_chestplate),
+                "X X", "XXX", "XXX", 'X', ItemsES.chainmail);
+        GameRegistry.addRecipe(new ItemStack(Items.chainmail_leggings),
+                "XXX", "X X", "X X", 'X', ItemsES.chainmail);
+        GameRegistry.addRecipe(new ItemStack(Items.chainmail_boots),
+                "X X", "X X", 'X', ItemsES.chainmail);
+
 		
 		// Mossy Blocks
-		if (Loader.isModLoaded("BiomesOPlenty") || Loader.isModLoaded("Forestry") || Loader.isModLoaded("ThermalExpansion")) {
-			return;
-		} else {
-			GameRegistry.addRecipe(new ItemStack(Blocks.mossy_cobblestone),
-					"XXX", "XYX", "XXX", 'X', Blocks.vine, 'Y', Blocks.cobblestone);
-			GameRegistry.addRecipe(new ItemStack(Blocks.stonebrick, 1, 1),
-					"XXX", "XYX", "XXX", 'X', Blocks.vine, 'Y', stoneBrickStack);
-		}
+        GameRegistry.addRecipe(new ItemStack(Blocks.mossy_cobblestone),
+                "XXX", "XYX", "XXX", 'X', Blocks.vine, 'Y', Blocks.cobblestone);
+        GameRegistry.addRecipe(new ItemStack(Blocks.stonebrick, 1, 1),
+                "XXX", "XYX", "XXX", 'X', Blocks.vine, 'Y', stoneBrickStack);
 		GameRegistry.addRecipe(new ItemStack(Blocks.cobblestone_wall, 1, 1),
 		        "XXX", "XYX", "XXX", 'X', Blocks.vine, 'Y', cobbleWallStack);
 		
@@ -64,12 +55,9 @@ public class Recipes {
 				" X ", "XYX", " X ", 'X', Items.iron_ingot, 'Y', Blocks.trapdoor);
 		
 		// Saddle
-		if (Loader.isModLoaded("DartCraft")) {
-			return;
-		} else {
-			GameRegistry.addRecipe(new ItemStack(Items.saddle),
-					"XXX", "XZ ", " Y ", 'X', leatherStack, 'Y', Items.iron_ingot, 'Z', stringStack);
-		}
+		GameRegistry.addRecipe(new ItemStack(Items.saddle),
+				"XXX", "XZ ", " Y ", 'X', leatherStack, 'Y', Items.iron_ingot, 'Z', stringStack);
+		
 		
 		// Horse Armour
 		GameRegistry.addRecipe(new ItemStack(Items.iron_horse_armor),
