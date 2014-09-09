@@ -1,12 +1,16 @@
 package com.drummingfish.extrastuff.item;
 
 import com.drummingfish.extrastuff.tab.ExtraStuffTab;
+import com.drummingfish.extrastuff.utilities.LogHelper;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.PlayerCapabilities;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
+import net.minecraft.world.World;
 
 public class ItemArmors extends ItemArmor {
 
@@ -15,11 +19,16 @@ public class ItemArmors extends ItemArmor {
 		this.setCreativeTab(ExtraStuffTab.EXTRASTUFF_TAB);
 	}
 	
-//	@Override
-//	public void onArmorTickUpdate(World world, EntityPlayer player, ItemStack itemStack)
-//    {
-//		 player.fallDistance = 0.0F;
-//    }
+	@Override
+	public void onArmorTick(World world, EntityPlayer player, ItemStack itemStack) {
+        if (player != null) {
+            if (this == ItemsES.permaIceHelm) {
+                player.capabilities.setPlayerWalkSpeed(0.05F);
+            }
+        } else {
+            player.capabilities.setPlayerWalkSpeed(0.1F);
+        }
+    }
 
     @Override
     @SideOnly(Side.CLIENT)
@@ -38,7 +47,6 @@ public class ItemArmors extends ItemArmor {
     @Override
     @SideOnly(Side.CLIENT)
 	public void registerIcons(IIconRegister register) {
-        System.out.println(this.getUnlocalizedName());
 		if (this == ItemsES.permaIceHelm) {
 			itemIcon = register.registerIcon(ItemInfo.TEXTURE_LOCATION + ":" + ItemInfo.PERMAICE_HELM_ICON);
 		}
