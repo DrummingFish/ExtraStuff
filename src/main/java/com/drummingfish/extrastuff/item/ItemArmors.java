@@ -72,5 +72,9 @@ public class ItemArmors extends ItemArmor {
         if (this == ItemsES.mummyBoots) {
             itemIcon = register.registerIcon(ItemInfo.TEXTURE_LOCATION + ":" + ItemInfo.MUMMY_BOOTS_ICON);
         }
+
+        if (this == ItemsES.flowerHelm) {
+            itemIcon = register.registerIcon(ItemInfo.TEXTURE_LOCATION + ":" + ItemInfo.FLOWER_HELM_ICON);
+        }
 	}
 }

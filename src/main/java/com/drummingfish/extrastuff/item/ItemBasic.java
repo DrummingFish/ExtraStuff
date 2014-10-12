@@ -28,6 +28,8 @@ public class ItemBasic extends Item {
             itemIcon = register.registerIcon(ItemInfo.TEXTURE_LOCATION + ":" + ItemInfo.HARDENED_LEATHER_ICON);
         } else if (this == ItemsES.waterSoakedLeather) {
             itemIcon = register.registerIcon(ItemInfo.TEXTURE_LOCATION + ":" + ItemInfo.WATER_SOAKED_LEATHER_ICON);
+        } else if (this == ItemsES.encrustedFlower) {
+            itemIcon = register.registerIcon(ItemInfo.TEXTURE_LOCATION + ":" + ItemInfo.ENCRUSTED_FLOWER_ICON);
         }
     }
 }
