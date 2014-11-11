@@ -2,7 +2,7 @@ package com.drummingfish.extrastuff.block;
 
 public class BlockInfo {
 
-	public static final String TEXTURE_LOCATION = "extrastuff";
+	public static final String TEXTURE_LOCATION = "extrastuff:";
 
 	public static final String BUTTON_IRON_KEY = "IronButton";
 	public static final String BUTTON_IRON_UNLOCALIZED_NAME = "ironButton";

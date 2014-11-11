@@ -30,11 +30,9 @@ public class RenderPermaIceBall extends Render {
         this(par1Item, 0);
     }
 
-    public void doRender(Entity par1Entity, double par2, double par4, double par6, float par8, float par9)
-    {
+    public void doRender(Entity par1Entity, double par2, double par4, double par6, float par8, float par9) {
         IIcon icon = this.field_94151_a.getIconFromDamage(this.field_94150_f);
-        if (icon != null)
-        {
+        if (icon != null) {
             GL11.glPushMatrix();
             GL11.glTranslatef((float)par2, (float)par4, (float)par6);
             GL11.glEnable(GL12.GL_RESCALE_NORMAL);
@@ -42,8 +40,7 @@ public class RenderPermaIceBall extends Render {
             this.bindTexture(new ResourceLocation("extrastuff:textures/items/chainmail.png"));
             Tessellator tessellator = Tessellator.instance;
 
-            if (icon == ItemPotion.func_94589_d("potion_splash"))
-            {
+            if (icon == ItemPotion.func_94589_d("potion_splash")) {
                 int i = PotionHelper.func_77915_a(((EntityPotion) par1Entity).getPotionDamage(), false);
                 float f2 = (float)(i >> 16 & 255) / 255.0F;
                 float f3 = (float)(i >> 8 & 255) / 255.0F;
@@ -61,7 +58,7 @@ public class RenderPermaIceBall extends Render {
     }
 
     @Override
-    protected ResourceLocation getEntityTexture(Entity p_110775_1_) {
+    protected ResourceLocation getEntityTexture(Entity entity) {
         return new ResourceLocation("extrastuff:textures/items/permaice_ball.png");
     }
 

@@ -2,9 +2,6 @@ package com.drummingfish.extrastuff.item;
 
 import com.drummingfish.extrastuff.entity.EntityPermaIceBall;
 import com.drummingfish.extrastuff.tab.ExtraStuffTab;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
-import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -15,7 +12,6 @@ public class ItemPermaIceBall extends Item {
     public ItemPermaIceBall() {
         this.maxStackSize = 16;
         this.setCreativeTab(ExtraStuffTab.EXTRASTUFF_TAB);
-        setUnlocalizedName(ItemInfo.PERMAICE_BALL_UNLOCALIZED_NAME);
     }
 
     public ItemStack onItemRightClick(ItemStack item, World world, EntityPlayer player) {
@@ -30,11 +26,5 @@ public class ItemPermaIceBall extends Item {
         }
 
         return item;
-    }
-
-    @Override
-    @SideOnly(Side.CLIENT)
-    public void registerIcons(IIconRegister register) {
-        itemIcon = register.registerIcon(ItemInfo.TEXTURE_LOCATION + ":" + ItemInfo.PERMAICE_BALL_ICON);
     }
 }

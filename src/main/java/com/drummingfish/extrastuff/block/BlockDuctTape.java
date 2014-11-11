@@ -30,7 +30,6 @@ public class BlockDuctTape extends BlockRedstoneWire {
 	
 	public BlockDuctTape() {
 		super();
-
         this.setCreativeTab(ExtraStuffTab.EXTRASTUFF_TAB);
 		setHardness(1F);
 		setStepSound(Block.soundTypeCloth);
@@ -39,30 +38,26 @@ public class BlockDuctTape extends BlockRedstoneWire {
 
 	@SideOnly(Side.CLIENT)
     public void registerIcon(IIconRegister register) {
-        register.registerIcon(ItemInfo.TEXTURE_LOCATION + ":" + ItemInfo.CHAINMAIL_ICON);
+        register.registerIcon(ItemInfo.TEXTURE_LOCATION + ItemInfo.CHAINMAIL_ICON);
     }
 	
 	@Override
-	public boolean canPlaceBlockAt(World par1World, int par2, int par3, int par4)
-    {
+	public boolean canPlaceBlockAt(World par1World, int par2, int par3, int par4) {
         return true;
     }
 	
 	@Override
-	public Item getItemDropped(int par1, Random par2Random, int par3)
-    {
+	public Item getItemDropped(int par1, Random par2Random, int par3) {
         return ItemsES.ducttape;
     }
 	
 	@Override
-	public boolean canProvidePower()
-    {
+	public boolean canProvidePower() {
         return false;
     }
 	
 	@Override
-	public Item getItem(World par1World, int par2, int par3, int par4)
-    {
+	public Item getItem(World par1World, int par2, int par3, int par4) {
         return ItemsES.ducttape;
     }
 

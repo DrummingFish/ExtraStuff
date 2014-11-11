@@ -65,51 +65,51 @@ public class ItemsES {
     public static Item waterSoakedLeather;
 
     public static void init() {
-		chainmail = new ItemBasic().setUnlocalizedName(ItemInfo.CHAINMAIL_UNLOCALIZED_NAME);
+		chainmail = new ItemBasic().setUnlocalizedName(ItemInfo.CHAINMAIL_UNLOCALIZED_NAME).setTextureName(ItemInfo.TEXTURE_LOCATION + ItemInfo.CHAINMAIL_ICON);
 
-		ironNugget = new ItemBasic().setUnlocalizedName(ItemInfo.IRON_NUGGET_UNLOCALIZED_NAME);
+		ironNugget = new ItemBasic().setUnlocalizedName(ItemInfo.IRON_NUGGET_UNLOCALIZED_NAME).setTextureName(ItemInfo.TEXTURE_LOCATION + ItemInfo.IRON_NUGGET_ICON);
 
-        ducttape = new ItemDuctTape(null);
+        ducttape = new ItemDuctTape().setUnlocalizedName(ItemInfo.DUCT_TAPE_UNLOCALIZED_NAME).setTextureName(ItemInfo.TEXTURE_LOCATION + ItemInfo.DUCT_TAPE_ICON);
 
-        permaIceShard = new ItemPermaIceShard();
+        permaIceShard = new ItemPermaIceShard().setUnlocalizedName(ItemInfo.PERMAICE_SHARD_UNLOCALIZED_NAME).setTextureName(ItemInfo.TEXTURE_LOCATION + ItemInfo.PERMAICE_SHARD_ICON);
 
-        toiletRoll = new ItemToiletRoll();
+        toiletRoll = new ItemToiletRoll().setUnlocalizedName(ItemInfo.TOILET_ROLL_UNLOCALIZED_NAME).setTextureName(ItemInfo.TEXTURE_LOCATION + ItemInfo.TOILET_ROLL_ICON);
 
-        permaIceHelm = new ItemArmors(armourPERMAICE, 5, 0).setUnlocalizedName(ItemInfo.PERMAICE_HELM_UNLOCALIZED_NAME);
-        permaIceBody = new ItemArmors(armourPERMAICE, 5, 1).setUnlocalizedName(ItemInfo.PERMAICE_BODY_UNLOCALIZED_NAME);
-        permaIceLegs = new ItemArmors(armourPERMAICE, 5, 2).setUnlocalizedName(ItemInfo.PERMAICE_LEGS_UNLOCALIZED_NAME);
-        permaIceBoots = new ItemArmors(armourPERMAICE, 5, 3).setUnlocalizedName(ItemInfo.PERMAICE_BOOTS_UNLOCALIZED_NAME);
+        permaIceHelm = new ItemArmors(armourPERMAICE, 5, 0).setUnlocalizedName(ItemInfo.PERMAICE_HELM_UNLOCALIZED_NAME).setTextureName(ItemInfo.TEXTURE_LOCATION + ItemInfo.PERMAICE_HELM_ICON);
+        permaIceBody = new ItemArmors(armourPERMAICE, 5, 1).setUnlocalizedName(ItemInfo.PERMAICE_BODY_UNLOCALIZED_NAME).setTextureName(ItemInfo.TEXTURE_LOCATION + ItemInfo.PERMAICE_BODY_ICON);
+        permaIceLegs = new ItemArmors(armourPERMAICE, 5, 2).setUnlocalizedName(ItemInfo.PERMAICE_LEGS_UNLOCALIZED_NAME).setTextureName(ItemInfo.TEXTURE_LOCATION + ItemInfo.PERMAICE_LEGS_ICON);
+        permaIceBoots = new ItemArmors(armourPERMAICE, 5, 3).setUnlocalizedName(ItemInfo.PERMAICE_BOOTS_UNLOCALIZED_NAME).setTextureName(ItemInfo.TEXTURE_LOCATION + ItemInfo.PERMAICE_BOOTS_ICON);
 
-        mummyHelm = new ItemArmors(armourMUMMY, 6, 0).setUnlocalizedName(ItemInfo.MUMMY_HELM_UNLOCALIZED_NAME);
-        mummyBody = new ItemArmors(armourMUMMY, 6, 1).setUnlocalizedName(ItemInfo.MUMMY_BODY_UNLOCALIZED_NAME);
-        mummyLegs = new ItemArmors(armourMUMMY, 6, 2).setUnlocalizedName(ItemInfo.MUMMY_LEGS_UNLOCALIZED_NAME);
-        mummyBoots = new ItemArmors(armourMUMMY, 6, 3).setUnlocalizedName(ItemInfo.MUMMY_BOOTS_UNLOCALIZED_NAME);
+        mummyHelm = new ItemArmors(armourMUMMY, 6, 0).setUnlocalizedName(ItemInfo.MUMMY_HELM_UNLOCALIZED_NAME).setTextureName(ItemInfo.TEXTURE_LOCATION + ItemInfo.MUMMY_HELM_ICON);
+        mummyBody = new ItemArmors(armourMUMMY, 6, 1).setUnlocalizedName(ItemInfo.MUMMY_BODY_UNLOCALIZED_NAME).setTextureName(ItemInfo.TEXTURE_LOCATION + ItemInfo.MUMMY_BODY_ICON);
+        mummyLegs = new ItemArmors(armourMUMMY, 6, 2).setUnlocalizedName(ItemInfo.MUMMY_LEGS_UNLOCALIZED_NAME).setTextureName(ItemInfo.TEXTURE_LOCATION + ItemInfo.MUMMY_LEGS_ICON);
+        mummyBoots = new ItemArmors(armourMUMMY, 6, 3).setUnlocalizedName(ItemInfo.MUMMY_BOOTS_UNLOCALIZED_NAME).setTextureName(ItemInfo.TEXTURE_LOCATION + ItemInfo.MUMMY_BOOTS_ICON);
 
-        flowerHelm = new ItemArmors(armourFLOWER, 7, 0).setUnlocalizedName(ItemInfo.FLOWER_HELM_UNLOCALIZED_NAME);
-        flowerBody = new ItemArmors(armourFLOWER, 7, 1).setUnlocalizedName(ItemInfo.FLOWER_BODY_UNLOCALIZED_NAME);
-        flowerLegs = new ItemArmors(armourFLOWER, 7, 2).setUnlocalizedName(ItemInfo.FLOWER_LEGS_UNLOCALIZED_NAME);
-        flowerBoots = new ItemArmors(armourFLOWER, 7, 3).setUnlocalizedName(ItemInfo.FLOWER_BOOTS_UNLOCALIZED_NAME);
+        flowerHelm = new ItemArmors(armourFLOWER, 7, 0).setUnlocalizedName(ItemInfo.FLOWER_HELM_UNLOCALIZED_NAME).setTextureName(ItemInfo.TEXTURE_LOCATION + ItemInfo.FLOWER_HELM_ICON);
+        flowerBody = new ItemArmors(armourFLOWER, 7, 1).setUnlocalizedName(ItemInfo.FLOWER_BODY_UNLOCALIZED_NAME).setTextureName(ItemInfo.TEXTURE_LOCATION + ItemInfo.FLOWER_BODY_ICON);
+        flowerLegs = new ItemArmors(armourFLOWER, 7, 2).setUnlocalizedName(ItemInfo.FLOWER_LEGS_UNLOCALIZED_NAME).setTextureName(ItemInfo.TEXTURE_LOCATION + ItemInfo.FLOWER_LEGS_ICON);
+        flowerBoots = new ItemArmors(armourFLOWER, 7, 3).setUnlocalizedName(ItemInfo.FLOWER_BOOTS_UNLOCALIZED_NAME).setTextureName(ItemInfo.TEXTURE_LOCATION + ItemInfo.FLOWER_BOOTS_ICON);
 
-        diamondFlowerHelm = new ItemArmors(armourDIAMONDFLOWER, 8, 0).setUnlocalizedName(ItemInfo.DIAMOND_FLOWER_HELM_UNLOCALIZED_NAME);
-        diamondFlowerBody = new ItemArmors(armourDIAMONDFLOWER, 8, 1).setUnlocalizedName(ItemInfo.DIAMOND_FLOWER_BODY_UNLOCALIZED_NAME);
-        diamondFlowerLegs = new ItemArmors(armourDIAMONDFLOWER, 8, 2).setUnlocalizedName(ItemInfo.DIAMOND_FLOWER_LEGS_UNLOCALIZED_NAME);
-        diamondFlowerBoots = new ItemArmors(armourDIAMONDFLOWER, 8, 3).setUnlocalizedName(ItemInfo.DIAMOND_FLOWER_BOOTS_UNLOCALIZED_NAME);
+        diamondFlowerHelm = new ItemArmors(armourDIAMONDFLOWER, 8, 0).setUnlocalizedName(ItemInfo.DIAMOND_FLOWER_HELM_UNLOCALIZED_NAME).setTextureName(ItemInfo.TEXTURE_LOCATION + ItemInfo.DIAMOND_FLOWER_HELM_ICON);
+        diamondFlowerBody = new ItemArmors(armourDIAMONDFLOWER, 8, 1).setUnlocalizedName(ItemInfo.DIAMOND_FLOWER_BODY_UNLOCALIZED_NAME).setTextureName(ItemInfo.TEXTURE_LOCATION + ItemInfo.DIAMOND_FLOWER_BODY_ICON);
+        diamondFlowerLegs = new ItemArmors(armourDIAMONDFLOWER, 8, 2).setUnlocalizedName(ItemInfo.DIAMOND_FLOWER_LEGS_UNLOCALIZED_NAME).setTextureName(ItemInfo.TEXTURE_LOCATION + ItemInfo.DIAMOND_FLOWER_LEGS_ICON);
+        diamondFlowerBoots = new ItemArmors(armourDIAMONDFLOWER, 8, 3).setUnlocalizedName(ItemInfo.DIAMOND_FLOWER_BOOTS_UNLOCALIZED_NAME).setTextureName(ItemInfo.TEXTURE_LOCATION + ItemInfo.DIAMOND_FLOWER_BOOTS_ICON);
 
-        permaIceAxe = new ItemPermaIceAxe(toolPERMAICE);
-        permaIceHoe = new ItemPermaIceHoe(toolPERMAICE);
-        permaIcePickaxe = new ItemPermaIcePickaxe(toolPERMAICE);
-        permaIceShovel = new ItemPermaIceShovel(toolPERMAICE);
-        permaIceSword = new ItemPermaIceSword(toolPERMAICE);
+        permaIceAxe = new ItemPermaIceAxe(toolPERMAICE).setUnlocalizedName(ItemInfo.PERMAICE_AXE_UNLOCALIZED_NAME).setTextureName(ItemInfo.TEXTURE_LOCATION + ItemInfo.PERMAICE_AXE_ICON);
+        permaIceHoe = new ItemPermaIceHoe(toolPERMAICE).setUnlocalizedName(ItemInfo.PERMAICE_HOE_UNLOCALIZED_NAME).setTextureName(ItemInfo.TEXTURE_LOCATION + ItemInfo.PERMAICE_HOE_ICON);
+        permaIcePickaxe = new ItemPermaIcePickaxe(toolPERMAICE).setUnlocalizedName(ItemInfo.PERMAICE_PICKAXE_UNLOCALIZED_NAME).setTextureName(ItemInfo.TEXTURE_LOCATION + ItemInfo.PERMAICE_PICKAXE_ICON);
+        permaIceShovel = new ItemPermaIceShovel(toolPERMAICE).setUnlocalizedName(ItemInfo.PERMAICE_SHOVEL_UNLOCALIZED_NAME).setTextureName(ItemInfo.TEXTURE_LOCATION + ItemInfo.PERMAICE_SHOVEL_ICON);
+        permaIceSword = new ItemPermaIceSword(toolPERMAICE).setUnlocalizedName(ItemInfo.PERMAICE_SWORD_UNLOCALIZED_NAME).setTextureName(ItemInfo.TEXTURE_LOCATION + ItemInfo.PERMAICE_SWORD_ICON);
 
-        permaIceBall = new ItemPermaIceBall();
+        permaIceBall = new ItemPermaIceBall().setUnlocalizedName(ItemInfo.PERMAICE_BALL_UNLOCALIZED_NAME).setTextureName(ItemInfo.TEXTURE_LOCATION + ItemInfo.PERMAICE_BALL_ICON);
 
-        encrustedFlower = new ItemBasic().setUnlocalizedName(ItemInfo.ENCRUSTED_FLOWER_UNLOCALIZED_NAME);
+        encrustedFlower = new ItemBasic().setUnlocalizedName(ItemInfo.ENCRUSTED_FLOWER_UNLOCALIZED_NAME).setTextureName(ItemInfo.TEXTURE_LOCATION + ItemInfo.ENCRUSTED_FLOWER_ICON);
 
-        reinforcedString = new ItemBasic().setUnlocalizedName(ItemInfo.REINFORCED_STRING_UNLOCALIZED_NAME);
+        reinforcedString = new ItemBasic().setUnlocalizedName(ItemInfo.REINFORCED_STRING_UNLOCALIZED_NAME).setTextureName(ItemInfo.TEXTURE_LOCATION + ItemInfo.REINFORCED_STRING_ICON);
 
-        hardenedLeather = new ItemBasic().setUnlocalizedName(ItemInfo.HARDENED_LEATHER_UNLOCALIZED_NAME);
+        hardenedLeather = new ItemBasic().setUnlocalizedName(ItemInfo.HARDENED_LEATHER_UNLOCALIZED_NAME).setTextureName(ItemInfo.TEXTURE_LOCATION + ItemInfo.HARDENED_LEATHER_ICON);
 
-        waterSoakedLeather = new ItemBasic().setUnlocalizedName(ItemInfo.WATER_SOAKED_LEATHER_UNLOCALIZED_NAME);
+        waterSoakedLeather = new ItemBasic().setUnlocalizedName(ItemInfo.WATER_SOAKED_LEATHER_UNLOCALIZED_NAME).setTextureName(ItemInfo.TEXTURE_LOCATION + ItemInfo.WATER_SOAKED_LEATHER_ICON);
 
         GameRegistry.registerItem(chainmail, ItemInfo.CHAINMAIL_KEY);
 

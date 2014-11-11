@@ -2,10 +2,6 @@ package com.drummingfish.extrastuff.item;
 
 import com.drummingfish.extrastuff.block.BlocksES;
 import com.drummingfish.extrastuff.tab.ExtraStuffTab;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
-import net.minecraft.block.material.Material;
-import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
@@ -14,10 +10,9 @@ import net.minecraft.world.World;
 
 public class ItemDuctTape extends Item {
 	
-	public ItemDuctTape(Material par2Material) {
+	public ItemDuctTape() {
 		super();
         this.setCreativeTab(ExtraStuffTab.EXTRASTUFF_TAB);
-        setUnlocalizedName(ItemInfo.DUCT_TAPE_UNLOCALIZED_NAME);
 	}
 
 	@Override
@@ -62,11 +57,5 @@ public class ItemDuctTape extends Item {
 
             return true;
         }
-    }
-
-    @Override
-    @SideOnly(Side.CLIENT)
-    public void registerIcons(IIconRegister register) {
-        itemIcon = register.registerIcon(ItemInfo.TEXTURE_LOCATION + ":" + ItemInfo.DUCT_TAPE_ICON);
     }
 }

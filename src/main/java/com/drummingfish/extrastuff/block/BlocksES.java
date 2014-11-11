@@ -28,50 +28,45 @@ public class BlocksES {
     public static Block window;
 
     public static Block orePermaIce;
-
     public static Block blockPermaIce;
 
 	public static void init() {
-		buttonIron = new BlockButtons("iron");
+		buttonIron = new BlockButtons().setBlockName(BlockInfo.BUTTON_IRON_UNLOCALIZED_NAME).setHardness(2.0F).setResistance(10.0F);
+		buttonGold = new BlockButtons().setBlockName(BlockInfo.BUTTON_GOLD_UNLOCALIZED_NAME).setHardness(1.0F).setResistance(10.0F);
+		buttonDiamond = new BlockButtons().setBlockName(BlockInfo.BUTTON_DIAMOND_UNLOCALIZED_NAME).setHardness(2.5F).setResistance(10.0F);
+		buttonEmerald = new BlockButtons().setBlockName(BlockInfo.BUTTON_EMERALD_UNLOCALIZED_NAME).setHardness(2.5F).setResistance(10.0F);
+		buttonObsidian = new BlockButtons().setBlockName(BlockInfo.BUTTON_OBSIDIAN_UNLOCALIZED_NAME).setHardness(5.0F).setResistance(2000.0F);
+
+		leverIron = new BlockLevers().setBlockName(BlockInfo.LEVER_IRON_UNLOCALIZED_NAME).setHardness(2.0F).setResistance(10.0F).setBlockTextureName(BlockInfo.TEXTURE_LOCATION + BlockInfo.LEVER_IRON_ICON);
+		leverGold = new BlockLevers().setBlockName(BlockInfo.LEVER_GOLD_UNLOCALIZED_NAME).setHardness(1.0F).setResistance(10.0F).setBlockTextureName(BlockInfo.TEXTURE_LOCATION + BlockInfo.LEVER_GOLD_ICON);
+		leverDiamond = new BlockLevers().setBlockName(BlockInfo.LEVER_DIAMOND_UNLOCALIZED_NAME).setHardness(2.5F).setResistance(10.0F).setBlockTextureName(BlockInfo.TEXTURE_LOCATION + BlockInfo.LEVER_DIAMOND_ICON);
+		leverEmerald = new BlockLevers().setBlockName(BlockInfo.LEVER_EMERALD_UNLOCALIZED_NAME).setHardness(2.5F).setResistance(10.0F).setBlockTextureName(BlockInfo.TEXTURE_LOCATION + BlockInfo.LEVER_EMERALD_ICON);
+		leverObsidian = new BlockLevers().setBlockName(BlockInfo.LEVER_OBSIDIAN_UNLOCALIZED_NAME).setHardness(5.0F).setResistance(2000.0F).setBlockTextureName(BlockInfo.TEXTURE_LOCATION + BlockInfo.LEVER_OBSIDIAN_ICON);
+
+		trapDoorIron = new BlockIronTrapDoor(Material.iron).setBlockName(BlockInfo.TRAPDOOR_IRON_UNLOCALIZED_NAME).setHardness(5.0F).setBlockTextureName(BlockInfo.TEXTURE_LOCATION + BlockInfo.TRAPDOOR_IRON_ICON);
+
+		window = new BlockWindow(Material.glass).setBlockName(BlockInfo.WINDOW_UNLOCALIZED_NAME);
+
+		orePermaIce = new BlockOre().setBlockName(BlockInfo.PERMAICE_ORE_UNLOCALIZED_NAME).setHardness(4.0F).setBlockTextureName(BlockInfo.TEXTURE_LOCATION + BlockInfo.PERMAICE_ORE_ICON);
+		blockPermaIce = new BlockPermaIce(Material.rock).setBlockTextureName(BlockInfo.TEXTURE_LOCATION + BlockInfo.PERMAICE_BLOCK_ICON);
+
 		GameRegistry.registerBlock(buttonIron, BlockInfo.BUTTON_IRON_KEY);
-		
-		buttonGold = new BlockButtons("gold");
 		GameRegistry.registerBlock(buttonGold, BlockInfo.BUTTON_GOLD_KEY);
-		
-		buttonDiamond = new BlockButtons("diamond");
 		GameRegistry.registerBlock(buttonDiamond, BlockInfo.BUTTON_DIAMOND_KEY);
-		
-		buttonEmerald = new BlockButtons("emerald");
 		GameRegistry.registerBlock(buttonEmerald, BlockInfo.BUTTON_EMERALD_KEY);
-		
-		buttonObsidian = new BlockButtons("obsidian");
 		GameRegistry.registerBlock(buttonObsidian, BlockInfo.BUTTON_OBSIDIAN_KEY);
-		
-		leverIron = new BlockLevers("iron");
+
 		GameRegistry.registerBlock(leverIron, BlockInfo.LEVER_IRON_KEY);
-		
-		leverGold = new BlockLevers("gold");
 		GameRegistry.registerBlock(leverGold, BlockInfo.LEVER_GOLD_KEY);
-		
-		leverDiamond = new BlockLevers("diamond");
 		GameRegistry.registerBlock(leverDiamond, BlockInfo.LEVER_DIAMOND_KEY);
-		
-		leverEmerald = new BlockLevers("emerald");
 		GameRegistry.registerBlock(leverEmerald, BlockInfo.LEVER_EMERALD_KEY);
-		
-		leverObsidian = new BlockLevers("obsidian");
 		GameRegistry.registerBlock(leverObsidian, BlockInfo.LEVER_OBSIDIAN_KEY);
-		
-		trapDoorIron = new BlockIronTrapDoor(Material.iron);
+
 		GameRegistry.registerBlock(trapDoorIron, BlockInfo.TRAPDOOR_IRON_KEY);
 
-        window = new BlockWindow(Material.glass);
         GameRegistry.registerBlock(window, BlockInfo.WINDOW_KEY);
 
-        orePermaIce = new BlockOre("permaIceOre");
         GameRegistry.registerBlock(orePermaIce, BlockInfo.PERMAICE_ORE_KEY);
-
-        blockPermaIce = new BlockPermaIce(Material.rock);
         GameRegistry.registerBlock(blockPermaIce, BlockInfo.PERMAICE_BLOCK_KEY);
 	}
 

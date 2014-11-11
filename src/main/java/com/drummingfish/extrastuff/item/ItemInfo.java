@@ -2,7 +2,7 @@ package com.drummingfish.extrastuff.item;
 
 public class ItemInfo {
 
-	public static final String TEXTURE_LOCATION = "extrastuff";
+	public static final String TEXTURE_LOCATION = "extrastuff:";
 
 	public static final String CHAINMAIL_KEY = "chainmail";
 	public static final String CHAINMAIL_UNLOCALIZED_NAME = "chainmail";

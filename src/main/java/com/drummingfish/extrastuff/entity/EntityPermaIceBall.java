@@ -19,8 +19,8 @@ public class EntityPermaIceBall extends EntityThrowable implements IThrowableEnt
         super(world);
     }
 
-    public EntityPermaIceBall(World world, double p_i1775_2_, double p_i1775_4_, double p_i1775_6_) {
-        super(world, p_i1775_2_, p_i1775_4_, p_i1775_6_);
+    public EntityPermaIceBall(World world, double dbl1, double dbl2, double dbl3) {
+        super(world, dbl1, dbl2, dbl3);
     }
 
     @Override

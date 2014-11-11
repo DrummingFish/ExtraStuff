@@ -17,20 +17,17 @@ import net.minecraft.util.MathHelper;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class BlockWindow extends BlockFenceGate
-{
+public class BlockWindow extends BlockFenceGate {
 	public static boolean disableValidation = false;
 	
     public BlockWindow(Material par2Material) {
         super();
         this.setCreativeTab(ExtraStuffTab.EXTRASTUFF_TAB);
-        this.setBlockName(BlockInfo.WINDOW_UNLOCALIZED_NAME);
     }
 
     @Override
     @SideOnly(Side.CLIENT)
-    public IIcon getIcon(int par1, int par2)
-    {
+    public IIcon getIcon(int par1, int par2) {
         return Blocks.glass.getBlockTextureFromSide(par1);
     }
 
@@ -53,13 +50,11 @@ public class BlockWindow extends BlockFenceGate
         }
     }
 
-    public boolean isOpaqueCube()
-    {
+    public boolean isOpaqueCube() {
         return false;
     }
 
-    public boolean renderAsNormalBlock()
-    {
+    public boolean renderAsNormalBlock() {
         return false;
     }
 
@@ -114,13 +109,11 @@ public class BlockWindow extends BlockFenceGate
         }
     }
 
-    public static boolean isFenceGateOpen(int par0)
-    {
+    public static boolean isFenceGateOpen(int par0) {
         return (par0 & 4) != 0;
     }
 
     @SideOnly(Side.CLIENT)
-
     public boolean shouldSideBeRendered(IBlockAccess par1IBlockAccess, int par2, int par3, int par4, int par5) {
         return true;
     }

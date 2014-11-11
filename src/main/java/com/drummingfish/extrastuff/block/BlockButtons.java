@@ -9,31 +9,9 @@ import net.minecraft.util.IIcon;
 
 public class BlockButtons extends BlockButton {
 
-    public BlockButtons(String type) {
+    public BlockButtons() {
         super(false);
         this.setCreativeTab(ExtraStuffTab.EXTRASTUFF_TAB);
-
-        if (type == "iron") {
-            this.setBlockName(BlockInfo.BUTTON_IRON_UNLOCALIZED_NAME);
-            setHardness(2.0F);
-            setResistance(10.0F);
-        } else if (type == "gold") {
-            this.setBlockName(BlockInfo.BUTTON_GOLD_UNLOCALIZED_NAME);
-            setHardness(1.0F);
-            setResistance(10.0F);
-        } else if (type == "diamond") {
-            this.setBlockName(BlockInfo.BUTTON_DIAMOND_UNLOCALIZED_NAME);
-            setHardness(2.5F);
-            setResistance(10.0F);
-        } else if (type == "emerald") {
-            this.setBlockName(BlockInfo.BUTTON_EMERALD_UNLOCALIZED_NAME);
-            setHardness(2.5F);
-            setResistance(10.0F);
-        } else {
-            this.setBlockName(BlockInfo.BUTTON_OBSIDIAN_UNLOCALIZED_NAME);
-            setHardness(5.0F);
-            setResistance(2000.0F);
-        }
     }
 
     @Override
